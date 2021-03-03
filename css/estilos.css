@@ -19,7 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 2em;
-    margin: 1em;
+/*     margin: 1em; */
 }
 
 .navegador__menu {
@@ -38,47 +38,35 @@ body {
 .portada {
     width: 100%;
     height: 75vh;
-    background-color: bisque;
-    display: flex;
-    flex-direction: row;
     padding: 2em;
+    background-color: tomato;
 }
 
 .portada__titulo {
-    width: 50%;
-    height: 75vh;
-    background-color: coral;
+    width: 100%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2em;
-    margin: 1em;
+    position: relative;
+    background-color: slategray;
 }
 
 .portada__titulo__h1 {
     display: inline-block;
-    background-color: cornflowerblue;
-    width: 100%;
     text-align: center;
     font-size: 10em;
+    background-color: saddlebrown;
 }
 
 .portada__titulo__parrafo {
     display: inline-block;
-    background-color: darkgreen;
-    width: 100%;
     text-align: center;
     font-size: 2em;
     margin: 1em;
-}
-
-.portada__imagen {
-    width: 50%;
-    height: 75vh;
-    background-color: cadetblue;
-    padding: 2em;
-    margin: 1em;
+    background-color: sandybrown;
 }
 
 .recorrido__uno {
