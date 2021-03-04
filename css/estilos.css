@@ -162,7 +162,7 @@ body {
 
 .degustacion__titulo {
     width: 100%;
-    height: 20vh;
+    height: auto;
     background-color: darkgreen;
     display: inline-block;
     font-size: 5em;
@@ -211,7 +211,7 @@ body {
 
 .documental__titulo {
     width: 100%;
-    height: 20vh;
+    height: auto;
     background-color: darkgreen;
     display: inline-block;
     font-size: 5em;
@@ -350,4 +350,105 @@ body {
 
 .footer__parrafo p {
     font-size: 1.5em;
+}
+
+/*INTEGRANTES*/
+
+.integrantes__titulo {
+    width: 100%;
+    height: auto;
+    background-color: darkgreen;
+    display: inline-block;
+    font-size: 5em;
+    text-align: center;
+    padding: 1em;
+    margin: auto;
+}
+
+.integrantes__grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2em;
+    width: 100%;
+    height: 50vh;
+    padding: 2em;
+    margin: 1em;
+}
+
+.integrantes__grid div {
+    background-color: thistle;
+    width: auto;
+    height: auto;
+}
+
+.invierno__grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    width: 100%;
+    height: 100vh;
+    padding: 2em;
+    margin: 1em;
+}
+
+.invierno__grid div {
+    background-color: thistle;
+    width: auto;
+    height: auto;
+}
+
+.invierno__grid--titulo {
+    grid-row: 1 / 3;
+}
+
+.verano__grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    width: 100%;
+    height: 100vh;
+    padding: 2em;
+    margin: 1em;
+}
+
+.verano__grid div {
+    background-color: thistle;
+    width: auto;
+    height: auto;
+}
+
+.verano__grid--titulo {
+    grid-row: 1 / 3;
+    grid-column: 4 / 5;
+}
+
+.staff__titulo {
+    width: 100%;
+    height: 20vh;
+    background-color: darkgreen;
+    display: inline-block;
+    font-size: 5em;
+    text-align: center;
+    padding: 1em;
+    margin: auto;
+}
+
+.staff__grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr) ;
+    gap: 2em;
+    width: 100%;
+    height: 50vh;
+    padding: 2em;
+    margin: 1em;
+}
+
+.staff__grid div {
+    background-color: thistle;
+    width: auto;
+    height: auto;
 }
