@@ -55,7 +55,6 @@ body {
     align-items: center;
     padding: 2em;
     position: relative;
-    background-color: slategray;
 }
 
 .portada__titulo__h1 {
@@ -76,7 +75,6 @@ body {
 .recorrido__uno {
     width: 100%;
     height: auto;
-    background-color: darkgrey;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -122,44 +120,6 @@ body {
     text-align: justify;
 }
 
-.recorrido__dos {
-    width: 100%;
-    height: 80vh;
-    background-color: darkgrey;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-content: center;
-    align-items: start;
-    padding: 2em;
-}
-
-.recorrido__dos__div {
-    width: auto;
-    height: 60vh;
-    background-color: darkseagreen;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: center;
-    padding: 2em;
-    margin: 1em;
-}
-
-.recorrido__dos__div__año {
-    font-size: 3.2em;
-}
-
-.recorrido__dos__div__titulo {
-    font-size: 2.2em;
-    padding: 0em 0em 2em 0em;
-}
-
-.recorrido__dos__div__parrafo {
-    font-size: 1.9em;
-    text-align: justify;
-}
-
 .degustacion__titulo {
     width: 100%;
     height: auto;
@@ -174,32 +134,34 @@ body {
 .degustacion__div {
     width: 100%;
     height: 80vh;
-    background-color: khaki;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding: 4em;
+    margin: 0;
+    background-color: red;
 }
 
 .degustacion__div__video {
     height: 60vh;
     background-color: lawngreen;
-    padding: 2em;
-    margin: 1em;
 }
 
 .degustacion__div__texto {
     height: 55vh;
-    background-color: lightcoral;
-    padding: 2em;
-    margin: 1em;
+    padding: 4em;
+    margin: 2em;
     display: flex;
     flex-direction: column;
 }
 
-.degustacion__div__texto__titulo {
+.degustacion__div__texto__titulo--1 {
+    font-size: 4em;
+}
+
+.degustacion__div__texto__titulo--2 {
     font-size: 3em;
     padding: 0em 0em 2em 0em;
 }
@@ -229,14 +191,13 @@ body {
     grid-template-rows: auto;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding: 4em;
+    margin: 0;
 }
 
 .documental__div__video {
     height: 60vh;
     background-color: lightseagreen;
-    padding: 2em;
-    margin: 1em;
 }
 
 .documental__div__video:nth-child(1) {
@@ -246,9 +207,8 @@ body {
 .documental__div__texto {
     height: 55vh;
     width: auto;
-    background-color: lime;
-    padding: 2em;
-    margin: 1em;
+    padding: 4em;
+    margin: 2em;
     display: flex;
     flex-direction: column;
     justify-content: baseline;
@@ -270,13 +230,13 @@ body {
 
 .newsletter {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-color: lightblue;
 }
 
 .newsletter__div {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-color: mediumpurple;
     padding: 2em;
     display: flex;
@@ -290,7 +250,6 @@ body {
     width: auto;
     height: auto;
     text-align: center;
-    background-color: lightseagreen;
     padding: 0em 2em 0em 2em;
     font-size: 4em;
 }
@@ -300,47 +259,42 @@ body {
     width: auto;
     height: auto;
     text-align: center;
-    background-color: maroon;
-    padding: 2em;
+    padding: 0;
     font-size: 2.2em;
 }
 
+.newsletter__div__email {
+    width: 30%;
+    display: inline-block;
+}
+
+.boton {
+    display: inline-block;
+    margin: 1em;
+}
+
+/*FOOTER*/
+
+
 .footer {
-    height: 40vh;
+    height: 30vh;
     width: 100%;
-    background-color: navajowhite;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     justify-content: space-around;
     align-items: center;
     padding: 2em;
 }
 
-.footer__logos {
-    width: 100%;
-    height: auto;
-    background-color: palegreen;
-    display: flex;
-    justify-content: center;
-}
-
 .footer__enlaces {
-    width: 80%;
+    width: auto;
     height: auto;
-    background-color: pink;
     font-size: 1.5em;
 }
 
-.footer__enlaces__menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-}
-
-.footer__parrafo {
-    background-color: royalblue;
-    width: 60%;
+.footer__enlaces__texto {
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -348,9 +302,40 @@ body {
     align-items: center;
 }
 
+.footer__enlaces__iconos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__enlaces__iconos ul {
+    list-style: none;
+}
+
+.footer__enlaces__iconos ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.footer__enlaces__iconos {
+    font-size: 2em;
+}
+
+.footer__parrafo {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right-style: solid;
+    border-right-color: rgba(255, 255, 255, 0.493);
+}
+
 .footer__parrafo p {
     font-size: 1.5em;
 }
+
 
 /*INTEGRANTES*/
 
@@ -451,4 +436,216 @@ body {
     background-color: thistle;
     width: auto;
     height: auto;
+}
+
+/*ESPECTACULOS*/
+
+.espectaculos__titulo {
+    width: 100%;
+    height: 20vh;
+    background-color: darkgreen;
+    display: inline-block;
+    font-size: 5em;
+    text-align: center;
+    padding: 1em;
+    margin: auto;
+}
+
+.espectaculos__2020 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    margin: 0 0 4em 0;
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(83, 71, 255);
+}
+
+.espectaculos__2020__img {
+    height: 50vh;
+    width: auto;
+    background-color: rgb(182, 122, 44);
+/*     padding: 4em; */
+    margin: 2em;
+}
+
+.espectaculos__2020__texto {
+    height: 50vh;
+/* /*     padding: 4em; */
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(214, 225, 65);
+}
+
+.espectaculos__2020__texto__titulo--1 {
+    font-size: 4em;
+}
+
+.espectaculos__2020__texto__titulo--2 {
+    font-size: 3em;
+    padding: 0em 0em 2em 0em;
+}
+
+.espectaculos__2018 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    margin: 0 0 4em 0;
+    width: 100%;
+    height: 60vh;
+    background-color: yellow;
+}
+
+.espectaculos__2018__texto {
+    height: 50vh;
+/*     padding: 4em; */
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+}
+
+.espectaculos__2018__img {
+    background-color: rgb(19, 218, 191);
+    height: 50vh;
+    width: auto;
+    margin: 2em;
+}
+
+.espectaculos__2018__img:nth-child(1) {
+    order: 1;
+}
+
+.espectaculos__2018__texto__titulo--1 {
+    font-size: 4em;
+}
+
+.espectaculos__2018__texto__titulo--2 {
+    font-size: 3em;
+    padding: 0em 0em 2em 0em;
+}
+
+.espectaculos__2016 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    margin: 0 0 4em 0;
+    width: 100%;
+    height: 60vh;
+    background-color: teal;
+}
+
+.espectaculos__2016__texto {
+    height: 50vh;
+/*     padding: 4em; */
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+}
+
+.espectaculos__2016__img {
+    background-color: rgb(218, 99, 19);
+    height: 50vh;
+    width: auto;
+    margin: 2em;
+}
+
+.espectaculos__2016__texto__titulo--1 {
+    font-size: 4em;
+}
+
+.espectaculos__2016__texto__titulo--2 {
+    font-size: 3em;
+    padding: 0em 0em 2em 0em;
+}
+
+.espectaculos__2015 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    margin: 0 0 4em 0;
+    width: 100%;
+    height: 60vh;
+    background-color: teal;
+}
+
+.espectaculos__2015__texto {
+    height: 50vh;
+/*     padding: 4em; */
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(136, 35, 35);
+}
+
+.espectaculos__2015__img {
+    background-color: rgb(138, 19, 218);
+    height: 50vh;
+    width: auto;
+    margin: 2em;
+}
+
+.espectaculos__2015__texto__titulo--1 {
+    font-size: 4em;
+}
+
+.espectaculos__2015__texto__titulo--2 {
+    font-size: 3em;
+    padding: 0em 0em 2em 0em;
+}
+
+.espectaculos__2015__img:nth-child(1) {
+    order: 1;
+}
+
+.espectaculos__2013 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    margin: 0 0 4em 0;
+    width: 100%;
+    height: 60vh;
+    background-color: teal;
+}
+
+.espectaculos__2013__texto {
+    height: 50vh;
+/*     padding: 4em; */
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(136, 35, 35);
+}
+
+.espectaculos__2013__img {
+    background-color: rgb(138, 19, 218);
+    height: 50vh;
+    width: auto;
+    margin: 2em;
+}
+
+.espectaculos__2013__texto__titulo--1 {
+    font-size: 4em;
+}
+
+.espectaculos__2013__texto__titulo--2 {
+    font-size: 3em;
+    padding: 0em 0em 2em 0em;
 }
