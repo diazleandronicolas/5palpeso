@@ -649,3 +649,78 @@ body {
     font-size: 3em;
     padding: 0em 0em 2em 0em;
 }
+
+/*MODAL*/
+
+.modal__2020__sinopsis h4 {
+    text-align: center;
+    margin: 0 0 1em 0;
+}
+
+.modal__2020__integrantes h4 {
+    text-align: center;
+    margin: 0 0 1em 0;
+}
+
+.modal__2020__integrantes__contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.modal__2020__integrantes__contenedor ul {
+    list-style: none;
+}
+
+/*HISTORIA*/
+
+.historia__titulo {
+    width: 100%;
+    height: 20vh;
+    background-color: darkgreen;
+    display: inline-block;
+    font-size: 5em;
+    text-align: center;
+    padding: 1em;
+    margin: auto;
+}
+
+
+.historia__linea__2020 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    height: auto;
+    width: 100%;
+    background-color: rgb(241, 169, 34);
+    padding: 5em 10em 2em 10em;
+    margin: auto;
+}
+
+.historia__linea__2020__año {
+    padding: 0;
+    background-color: yellow;
+    width: auto;
+    text-align: center;
+    height: auto;
+}
+
+.historia__linea__2020__año p {
+    font-size: 6em;
+}
+
+.historia__linea__2020 summary {
+    font-size: 2em;
+    background: chocolate;
+    padding: 0.5em 0 0 0;
+}
+
+.historia__linea__2020 p {
+    font-size: 2em;
+}
+
+
