@@ -376,6 +376,7 @@ body {
     width: 100%;
     height: auto;
     padding: 2em;
+    border-radius: 10px;
 }
 
 .invierno__grid div {
@@ -383,6 +384,11 @@ body {
     width: 100%;
     height: auto;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.invierno__grid div img {
+    border-radius: 5px;
 }
 
 .invierno__grid--titulo {
@@ -401,6 +407,7 @@ body {
     width: 100%;
     height: auto;
     padding: 2em;
+    border-radius: 5px;
 }
 
 .verano__grid div {
@@ -410,6 +417,10 @@ body {
     cursor: pointer;
 }
 
+.verano__grid div img {
+    border-radius: 5px;
+}
+
 .verano__grid--titulo {
     grid-row: 1 / 3;
     grid-column: 4 / 5;
@@ -417,6 +428,7 @@ body {
 
 .verano__grid div:nth-child(1) {
     cursor: unset;
+    border-radius: 5px;
 }
 
 .staff__titulo {
@@ -438,6 +450,7 @@ body {
     width: 100%;
     height: auto;
     padding: 2em;
+    border-radius: 5px;
 }
 
 .staff__grid div {
@@ -445,6 +458,10 @@ body {
     width: 100%;
     height: auto;
     cursor: pointer;
+}
+
+.staff__grid div img {
+    border-radius: 5px;
 }
 
 #invierno__grid--1, #invierno__grid--2, #invierno__grid--3, 
