@@ -1,3 +1,4 @@
+
 *  {
     box-sizing: border-box;
     padding: 0;
@@ -375,7 +376,6 @@ body {
     width: 100%;
     height: auto;
     padding: 2em;
-    margin: 1em;
 }
 
 .invierno__grid div {
@@ -396,7 +396,6 @@ body {
     width: 100%;
     height: auto;
     padding: 2em;
-    margin: 1em;
 }
 
 .verano__grid div {
@@ -429,7 +428,6 @@ body {
     width: 100%;
     height: auto;
     padding: 2em;
-    margin: 1em;
 }
 
 .staff__grid div {
@@ -457,6 +455,17 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.snap-container {
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.snap-section {
+    scroll-snap-align: start;
+    min-height: 60vh;
 }
 
 /*ESPECTACULOS*/
@@ -500,6 +509,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(214, 225, 65);
+    cursor: pointer;
 }
 
 .espectaculos__2020__texto__titulo--1 {
@@ -531,6 +541,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: silver;
+    cursor: pointer;
 }
 
 .espectaculos__2018__img {
@@ -564,6 +575,7 @@ body {
     width: 100%;
     height: 60vh;
     background-color: teal;
+    cursor: pointer;
 }
 
 .espectaculos__2016__texto {
@@ -611,6 +623,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(136, 35, 35);
+    cursor: pointer;
 }
 
 .espectaculos__2015__img {
@@ -653,6 +666,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(136, 35, 35);
+    cursor: pointer;
 }
 
 .espectaculos__2013__img {
@@ -689,6 +703,7 @@ body {
     gap: 2em;
     align-items: baseline;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 .modal__2020__integrantes__contenedor ul {
