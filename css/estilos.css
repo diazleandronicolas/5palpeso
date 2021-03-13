@@ -20,7 +20,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 2em;
-/*     margin: 1em; */
+/*     position: fixed;
+    z-index: 2; */
 }
 
 .navegador__menu {
@@ -286,6 +287,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 2em;
+    border-top-style: outset;
 }
 
 .footer__enlaces {
@@ -377,6 +379,25 @@ body {
     height: auto;
     padding: 2em;
     border-radius: 10px;
+/*     position: absolute; */
+}
+
+.invierno__grid div p {
+    position: absolute;
+    bottom: 0.1em;
+    left: 0;
+    font-weight: bolder;
+    font-size: 3em;
+    visibility: hidden;
+    color: white;
+}
+
+
+.invierno__grid div:hover p {
+    visibility: visible;
+    transform: translateX(12%);
+    transition: all 0.5s ease;
+    position: absolute;
 }
 
 .invierno__grid div {
@@ -385,6 +406,7 @@ body {
     height: auto;
     cursor: pointer;
     border-radius: 5px;
+    position: relative;
 }
 
 .invierno__grid div img {
@@ -415,6 +437,24 @@ body {
     width: auto;
     height: auto;
     cursor: pointer;
+    position: relative;
+}
+
+.verano__grid div p {
+    position: absolute;
+    bottom: 0.1em;
+    left: 0;
+    font-weight: bolder;
+    font-size: 3em;
+    visibility: hidden;
+    color: white;
+}
+
+.verano__grid div:hover p {
+    visibility: visible;
+    transform: translateX(12%);
+    transition: all 0.5s ease;
+    position: absolute;
 }
 
 .verano__grid div img {
@@ -458,6 +498,23 @@ body {
     width: 100%;
     height: auto;
     cursor: pointer;
+    position: relative;
+}
+.staff__grid div p {
+    position: absolute;
+    bottom: 0.1em;
+    left: 0;
+    font-weight: bolder;
+    font-size: 3em;
+    visibility: hidden;
+    color: white;
+}
+
+.staff__grid div:hover p {
+    visibility: visible;
+    transform: translateX(12%);
+    transition: all 0.5s ease;
+    position: absolute;
 }
 
 .staff__grid div img {
