@@ -15,18 +15,18 @@
         <div class="navegador__logo">
             <img src="" alt="">
         </div>
-        <ul class="navegador__menu">
-            <li class="navegador__menu__lista"><a href="index.html">Home</a></li>
-            <li class="navegador__menu__lista"><a href="historia.html">Historia</a></li>
-            <li class="navegador__menu__lista"><a href="espectaculos.html">Espectáculos</a></li>
-            <li class="navegador__menu__lista"><a href="integrantes.html">Integrantes</a></li>
-            <li class="navegador__menu__lista"><a href="contacto.html">Contacto</a></li>
+        <ul id="ul__menu" class="navegador__menu">
+            <li class="navegador__menu__lista"><a class="ul__a" href="index.html">Home</a></li>
+            <li class="navegador__menu__lista"><a class="ul__a" href="historia.html">Historia</a></li>
+            <li class="navegador__menu__lista"><a class="ul__a" href="espectaculos.html">Espectáculos</a></li>
+            <li class="navegador__menu__lista"><a class="ul__a" href="integrantes.html">Integrantes</a></li>
+            <li class="navegador__menu__lista"><a class="ul__a" href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
 
-    <header class="portada">
+    <header class="portada" id="portada__integrantes">
         <div class="portada__titulo">
-            <h1 class="portada__titulo__h1">Team invierno | Team verano</h1>
+            <h1 class="portada__titulo__h1">Team verano | Team invierno</h1>
             <p class="portada__titulo__parrafo">
                 Acá tenés la verdadera grieta.
             </p>
@@ -34,10 +34,42 @@
     </header>
 
     <main>
-
+<!-- 
         <div class="integrantes">
             <h2 class="integrantes__titulo">En escena</h2>
-        </div>
+        </div> -->
+
+        <section class="verano">
+            <div class="verano__grid">
+                <div class="verano__grid--titulo">
+                    <h3>Team Verano</h3>
+                </div>
+                <div data-toggle="modal" data-target="#verano__1">
+                    <img id="verano__grid--1" src="imagenes/integrantes/verano_1.jpg" alt="">
+                    <p>Lucho Lambrecht</p>
+                </div>
+                <div data-toggle="modal" data-target="#verano__2">
+                    <img id="verano__grid--2" src="imagenes/integrantes/verano_2.jpg" alt="">
+                    <p>Marianella Santoro</p>
+                </div>
+                <div data-toggle="modal" data-target="#verano__3">
+                    <img id="verano__grid--3" src="imagenes/integrantes/verano_3.jpg" alt="">
+                    <p>Claudio Martin</p>
+                </div>
+                <div data-toggle="modal" data-target="#verano__4">
+                    <img id="verano__grid--4" src="imagenes/integrantes/verano_4.jpg" alt="">
+                    <p>Matías Conte</p>
+                </div>
+                <div data-toggle="modal" data-target="#verano__5">
+                    <img id="verano__grid--5" src="imagenes/integrantes/verano_5.jpg" alt="">
+                    <p>Manuel Abregú</p>
+                </div>
+                <div data-toggle="modal" data-target="#verano__6">
+                    <img id="verano__grid--6" src="imagenes/integrantes/verano_6.jpg" alt="">
+                    <p>Nahuel Tagliabue</p>
+                </div>
+            </div>
+        </section>
 
         <section class="invierno">
             <div class="invierno__grid">
@@ -70,38 +102,7 @@
                 </div>
             </div>
         </section>
-            
-        <section class="verano">
-            <div class="verano__grid">
-                <div class="verano__grid--titulo">
-                    <h3>Team Verano</h3>
-                </div>
-                <div data-toggle="modal" data-target="#verano__1">
-                    <img id="verano__grid--1" src="imagenes/integrantes/verano_1.jpg" alt="">
-                    <p>Lucho Lambrecht</p>
-                </div>
-                <div data-toggle="modal" data-target="#verano__2">
-                    <img id="verano__grid--2" src="imagenes/integrantes/verano_2.jpg" alt="">
-                    <p>Marianella Santoro</p>
-                </div>
-                <div data-toggle="modal" data-target="#verano__3">
-                    <img id="verano__grid--3" src="imagenes/integrantes/verano_3.jpg" alt="">
-                    <p>Claudio Martin</p>
-                </div>
-                <div data-toggle="modal" data-target="#verano__4">
-                    <img id="verano__grid--4" src="imagenes/integrantes/verano_4.jpg" alt="">
-                    <p>Matías Conte</p>
-                </div>
-                <div data-toggle="modal" data-target="#verano__5">
-                    <img id="verano__grid--5" src="imagenes/integrantes/verano_5.jpg" alt="">
-                    <p>Manuel Abregú</p>
-                </div>
-                <div data-toggle="modal" data-target="#verano__6">
-                    <img id="verano__grid--6" src="imagenes/integrantes/verano_6.jpg" alt="">
-                    <p>Nahuel Tagliabue</p>
-                </div>
-            </div>
-        </section>
+        
 
         <section class="staff">
             <h2 class="staff__titulo">Staff</h2>
@@ -478,5 +479,25 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+    <script>
+        src="https://code.jquery.com/jquery-3.6.0.js"
+    </script>
+    <script>
+        $(window).scroll(function() {
+            if($(window).scrollTop()){
+                $("nav").addClass("white");
+                $("#ul__menu").addClass("translate");
+                $(".ul__a").addClass("black");
+
+            }
+            else {
+                $("nav").removeClass("white");
+                $("#ul__menu").removeClass("translate");
+                $(".ul__a").removeClass("black");
+            }
+        });
+    </script>
 </body>
 </html>
