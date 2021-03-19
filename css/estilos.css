@@ -7,6 +7,7 @@
 
 body {
     font-size: 10px;
+    font-family: "Poppins", sans-serif;
 }
 
 /*Index*/
@@ -14,14 +15,11 @@ body {
 .navegador {
     width: 100%;
     height: 25vh;
-/*     background-color: aqua; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 2em;
-    
-    
+    padding: 4em 6em;
     position: fixed;
     overflow: hidden;
     z-index: 2;
@@ -45,21 +43,19 @@ nav.white {
 .navegador__menu {
     width: 50%;
     height: 10vh;
-/*     background-color: rgb(255, 255, 255); */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    padding: 2em;
-    margin: 1em;
-
+    padding: 0;
+    margin: 0;
     transition: 0.5s;
     overflow: hidden;
 }
 
 .navegador__menu__lista {
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 .navegador__menu__lista a {
@@ -87,95 +83,110 @@ nav.white {
     align-items: center;
     padding: 2em;
     position: relative;
-    color: white;
 }
 
 .portada__titulo__h1 {
     display: inline-block;
     text-align: center;
-    font-size: 10em;
-/*     background-color: saddlebrown; */
+    font-size: 5em;
+    text-transform: uppercase;
+    color: #ffff01;
+    font-family: "Allerta Stencil", sans-serif;
 }
 
 .portada__titulo__parrafo {
+    width: 55%;
     display: inline-block;
     height: auto;
     text-align: center;
-    font-size: 3em;
-    margin: 1em;
+    font-size: 2.5em;
     text-shadow: 2px 2px 40px black;
+    font-family: "Rock Salt", sans-serif;
+    color: white;
+}
+
+.recorrido {
+    padding: 4em 2em;
 }
 
 .recorrido__uno {
     width: 100%;
-    height: auto;
+    height: 75vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding: 7em;
+    gap: 6em;
 }
 
 .recorrido__titulo {
     width: 100%;
     height: auto;
-    background-color: darkgreen;
     display: inline-block;
-    font-size: 5em;
+    font-size: 4em;
     text-align: center;
     padding: 1em;
-    margin: auto;
+    margin: 0;
+    font-family: "Allerta Stencil", sans-serif;
+    text-transform: uppercase;
+    color: #01a0c6;
 }
 
 .recorrido__uno__div {
     width: auto;
-    height: auto;
-    background-color: darkseagreen;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
-    padding: 2em;
-    margin: 1em;
+    padding: 0;
+    margin: 0;
 }
 
 .recorrido__uno__div__año {
-    font-size: 3.2em;
+    font-size: 2em;
+    font-family: "Allerta Stencil", sans-serif;
 }
 
 .recorrido__uno__div__titulo {
     font-size: 2.2em;
     padding: 0em 0em 2em 0em;
+    font-family: "Rock Salt", sans-serif;
 }
 
 .recorrido__uno__div__parrafo {
-    font-size: 1.9em;
+    font-size: 1.4em;
     text-align: justify;
 }
 
 .degustacion__titulo {
     width: 100%;
     height: auto;
-    background-color: darkgreen;
     display: inline-block;
-    font-size: 5em;
+    font-size: 4em;
     text-align: center;
-    padding: 1em;
-    margin: auto;
+    padding: 2em 2em 0 2em;
+    margin: 0;
+    font-family: "Allerta Stencil", sans-serif;
+    text-transform: uppercase;
+    color: #f0047f;
+    background-color: black;
 }
 
 .degustacion__div {
     width: 100%;
-    height: 80vh;
+    height: 75vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     justify-content: center;
-    align-items: center;
-    padding: 4em;
+    align-items: flex-start;
+    padding: 8em;
     margin: 0;
-    background-color: red;
+    gap: 4em;
+    background-color: rgb(0, 0, 0);
 }
 
 .degustacion__div__video {
@@ -184,9 +195,9 @@ nav.white {
 }
 
 .degustacion__div__texto {
-    height: 55vh;
-    padding: 4em;
-    margin: 2em;
+    height: auto;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
@@ -201,7 +212,7 @@ nav.white {
 }
 
 .degustacion__div__texto__parrafo {
-    font-size: 1.9em;
+    font-size: 1.5em;
     text-align: justify;
 }
 
