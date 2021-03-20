@@ -21,8 +21,11 @@
 <body>
 
     <nav class="navegador">
-        <div class="navegador__logo">
-            <img src="" alt="">
+        <div id="nav__logo--1" class="navegador__logo">
+            <img src="imagenes/logos/5palpeso_logo_02_rgb_blanco.png" alt="">
+        </div>
+        <div id="nav__logo--2">
+            <img src="imagenes/logos/5palpeso_logo_01_rgb_negro.png" alt="">
         </div>
         <ul id="ul__menu" class="navegador__menu">
             <li class="navegador__menu__lista"><a class="ul__a" href="index.html">Home</a></li>
@@ -180,12 +183,16 @@
                 $("nav").addClass("white");
                 $("#ul__menu").addClass("translate");
                 $(".ul__a").addClass("black");
+                $("#nav__logo--2").addClass ("logo-visible");
+                $("#nav__logo--1").addClass ("logo-invisible");
 
             }
             else {
                 $("nav").removeClass("white");
                 $("#ul__menu").removeClass("translate");
                 $(".ul__a").removeClass("black");
+                $("#nav__logo--2").removeClass("logo-visible");
+                $("#nav__logo--1").removeClass("logo-invisible");
             }
         });
     </script>
