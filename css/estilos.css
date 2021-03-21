@@ -240,7 +240,7 @@ nav.white {
 
 .degustacion__div__video {
     height: auto;
-    background-color: lawngreen;
+    width: 100%;
 }
 
 .degustacion__div__texto {
@@ -261,7 +261,7 @@ nav.white {
     font-size: 3em;
     padding: 0em 0em 2em 0em;
     font-family: "Rock salt", sans-serif;
-    color: white;
+    color: #f0047f;
 }
 
 .degustacion__div__texto__parrafo {
@@ -333,7 +333,7 @@ nav.white {
     font-size: 3em;
     padding: 0em 0em 2em 0em;
     font-family: "Rock salt", sans-serif;
-    color: black;
+    color: #80c41c;
 }
 
 .documental__div__texto__parrafo {
@@ -410,7 +410,7 @@ nav.white {
     grid-template-rows: 1fr 1fr;
     justify-content: space-around;
     align-items: center;;
-    padding: 4em;
+    padding: 2em 4em;
     border-top-style: outset;
 }
 
