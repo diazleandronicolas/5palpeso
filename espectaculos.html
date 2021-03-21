@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">   
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8ae40e061a.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>5 Pal'Peso</title>
 </head>
 
 <body>
 
     <nav class="navegador">
-        <div class="navegador__logo">
-            <img src="" alt="">
+        <div id="nav__logo--1" class="navegador__logo">
+            <img src="imagenes/logos/5palpeso_logo_02_rgb_blanco.png" alt="">
+        </div>
+        <div id="nav__logo--2">
+            <img src="imagenes/logos/5palpeso_logo_01_rgb_negro.png" alt="">
         </div>
         <ul id="ul__menu" class="navegador__menu">
             <li class="navegador__menu__lista"><a class="ul__a" href="index.html">Home</a></li>
@@ -35,7 +47,6 @@
 
     <main>
         <section class="espectaculos">
-            <h2 class="espectaculos__titulo">Espectáculos</h2>
             <div class="espectaculos__2020">
                 <div class="espectaculos__2020__img" data-toggle="modal" data-target="#año2020">
                     <img src="imagenes/espectaculos/espectaculo_atodoonada.jpg" alt="">
@@ -46,13 +57,13 @@
                 </div>
             </div>
             
-            <div class="espectaculos__2018">
-                <div class="espectaculos__2018__img" data-toggle="modal" data-target="#año2018">
+            <div class="espectaculos__2017">
+                <div class="espectaculos__2017__img" data-toggle="modal" data-target="#año2018">
                     <img src="imagenes/espectaculos/espectaculo_suerte.jpg" alt="">
                 </div>
-                <div class="espectaculos__2018__texto">
-                    <p class="espectaculos__2018__texto__titulo--1">2018</p>
-                    <p class="espectaculos__2018__texto__titulo--2">Suerte!</p>
+                <div class="espectaculos__2017__texto">
+                    <p class="espectaculos__2017__texto__titulo--1">2017</p>
+                    <p class="espectaculos__2017__texto__titulo--2">Suerte!</p>
                 </div>
             </div>
     
@@ -89,48 +100,67 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__parrafo">
-            <p>Nuestra casa es el Club Mitre</p>
-            <p>Mitre 1417, Quilmes, BA</p>
-            <p>¿Querés presenciar un ensayo?</p>
-            <p>Martes y jueves de 20hs a 22hs</p>
-        </div>
-        <div class="footer__enlaces">
-            <div class="footer__enlaces__iconos">
-                <ul>
-                    <li><a href="http://www.youtube.com/c/5palpesomurga" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="http://www.instagram.com/5palpesomurga" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="http://www.facebook.com/5palpesomurga" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                </ul>
+        <div class="footer__logo">
+            <div class="footer__logo__img">
+                <img src="imagenes/logos/5palpeso_logo_01_rgb_negro.png" alt="">
             </div>
-            <div class="footer__enlaces__texto">
-                <p>Todos los derechos reservados ©</p>
-                <p>¡Mandanos un <a href="prensacincopalpeso@gmail.coam">mail</a>! :)</p>
+            <div class="footer__logo__derechos">
+                <p>©2021 Todos los derechos reservados</p>
             </div>
         </div>
+        <div class="footer__texto">
+            <div class="footer__texto__mitre">
+                <p class="footer__texto--1">Nuestra casa es el</p>
+                <p class="footer__texto--2">Club Mitre</p>
+                <p class="footer__texto--3">Mitre 1417, Quilmes, BA</p>
+            </div>
+            <div class="footer__texto__ensayo">
+                <p class="footer__texto--1">¿Querés presenciar un ensayo?</p>
+                <p class="footer__texto--2">Vení</p>
+                <p class="footer__texto--3">Martes y jueves de 18hs a 20hs</p>
+            </div>
+            <div class="footer__texto__consulta">
+                <p class="footer__texto--1">¿Tenés alguna consulta?</p>
+                <p class="footer__texto--2">Mandamos un mail</p>
+                <p class="footer__texto--3"><a href="mailto: prensacincopalpeso@gmail.com">prensacincopalpeso@gmail.com</a></p>
+            </div>
+            <div class="footer__texto__seguinos">
+                <p class="footer__texto--1">¿Querés estar al tanto?</p>
+                <p class="footer__texto--2">Seguinos</p>
+                <div class="footer__seguinos__iconos">
+                    <ul>
+                        <li><a href="http://www.youtube.com/c/5palpesomurga" target="_blank"><i id="icono__youtube" class="fab fa-youtube"></i></a></li>
+                        <li><a href="http://www.instagram.com/5palpesomurga" target="_blank"><i id="icono__instagram" class="fab fa-instagram"></i></a></li>
+                        <li><a href="http://www.facebook.com/5palpesomurga" target="_blank"><i id="icono__facebook" class="fab fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
     </footer>
 
 
-                                <!-----MODALES---->
+
+                    <!-----MODALES---->
 
     <div class="modal fade" id="año2020" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header modal__espectaculos__header">
                     <h3 class="modal-title" id="exampleModalLabel">A todo o nada (2020)</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="row modal__2020">
-                        <div class="col-xl-6 col-s-12 modal__2020__sinopsis">
-                            <h4>Sinopsis</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur corrupti saepe laborum maxime voluptate excepturi neque soluta quasi quae non velit modi praesentium ea quam, quibusdam omnis laudantium. Velit dolore veniam in tempore minima quam eius reprehenderit esse similique illum?</p>
+                <div class="modal-body modal__espectaculos__body">
+                    <div class="row modal__espectaculos">
+                        <div class="col-xl-6 col-s-12 modal__espectaculos__sinopsis">
+                            <h4 id="modal__h4__2020">Sinopsis</h4>
+                            <p>"A todo o nada" es un espectaculo que no sigue, como los anteriores, un hilo conductor que atraviesa del principio al final funcionando como una narrativa cronológica. La frase parte desde una postura de la murga ante distintas adversidades que sufrieron ese año y se refleja en distintos "cuplés" que se encargaran de situarnos en distintas grietas donde cada parte va a "todo o nada", como el caso del "team verano vs team invierno" o "el conurbano vs la capital", como también las críticas a las políticas económicas y geopolíticas de la era macrista. </p>
                         </div>
-                        <div class="col-xl-6 col-s-12 modal__2020__integrantes">
-                            <h4>Integrantes</h4>
-                            <div class="modal__2020__integrantes__contenedor">
+                        <div class="col-xl-6 col-s-12 modal__espectaculos__integrantes">
+                            <h4 id="modal__h4__2020">Integrantes</h4>
+                            <div class="modal__espectaculos__integrantes__contenedor">
                                 <div>
                                     <h6>Primos</h6>        
                                     <ul>
@@ -191,22 +221,23 @@
     <div class="modal fade" id="año2018" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Suerte! (2018)</h3>
+                <div class="modal-header modal__espectaculos__header">
+                    <h3 class="modal-title" id="exampleModalLabel">Suerte! (2017)</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="row modal__2020">
-                        <div class="col-xl-6 col-s-12 modal__2020__sinopsis">
-                            <h4>Sinopsis</h4>
-                            <p>Suerte! El programa donde el azar decide tu destino, es el nombre de un programa de televisión, probablemente de la década de los 80s, donde la murga llega como el invitado del día.
-                                Conducido por un histriónico presentador de época, esta emisión televisiva tiene como gran protagonista a La Rueda, una especie de rueda de la fortuna de cualquier kermesse barrial. Si bien están presentes en el repertorio de 5 Pal Peso temas como los prejuicios, la adolescencia, la intolerancia, las costumbres y la educación, entre otros, es la actividad de La Rueda quien determinará que se verá en cada oportunidad que se lleve a cabo cada presentación.</p>
+                <div class="modal-body modal__espectaculos__body">
+                    <div class="row modal__espectaculos">
+                        <div class="col-xl-6 col-s-12 modal__espectaculos__sinopsis">
+                            <h4 id="modal__h4__2017">Sinopsis</h4>
+                            <p>"Suerte! El programa donde el azar decide tu destino" es el nombre de un programa de televisión, probablemente de la década de los 80s, donde la murga llega como el invitado del día.
+                                Conducido por un histriónico presentador de época, acompañado por su sutil secretaria, esta emisión televisiva tiene como gran protagonista a "la rueda", una especie de rueda de la fortuna de cualquier kermesse barrial, que diagrama en base a los resultados de sus vueltas, las cosas que deberán hacer los invitados durante su participación en el programa. Si bien están presentes en el repertorio de 5 Pal'Peso temas como los prejuicios, la adolescencia, la intolerancia, las costumbres y la educación, entre otros, es la actividad de "la rueda" quién determinará qué se verá en cada oportunidad que se lleve a cabo una presentación en vivo.
+                            </p>
                         </div>
-                        <div class="col-xl-6 col-s-12 modal__2020__integrantes">
-                            <h4>Integrantes</h4>
-                            <div class="modal__2020__integrantes__contenedor">
+                        <div class="col-xl-6 col-s-12 modal__espectaculos__integrantes">
+                            <h4 id="modal__h4__2017">Integrantes</h4>
+                            <div class="modal__espectaculos__integrantes__contenedor">
                                 <div>
                                     <h6>Primos</h6>        
                                     <ul>
@@ -267,21 +298,21 @@
     <div class="modal fade" id="año2016" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Un Circo (2016)</h3>
+                <div class="modal-header modal__espectaculos__header">
+                    <h3 class="modal-title" id="exampleModalLabel">Un circo (2016)</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="row modal__2020">
-                        <div class="col-xl-6 col-s-12 modal__2020__sinopsis">
-                            <h4>Sinopsis</h4>
-                            <p>Un circo relata la historia de un murguista que, al ensayar diversos temas con la murga, va rememorando anécdotas y personajes que conoció en un circo en el que trabajó: un burdo equilibrista, perturbado por su inseguridad; un grupo de payasos, grotescos pero polémicos; un cruel y siniestro domador; y los fenómenos autoconvocados. Todos recuerdos de aquel circo que lo mantiene atado al pasado. En ese contexto, la murga invita a recorrer este paseo y así poder descubrir si esos recuerdos del murguista son meros pantallazos del pasado, oscuras proyecciones de sí mismo o puras realidades. Un circo quizá real, quizá producto de su imaginación.</p>
+                <div class="modal-body modal__espectaculos__body">
+                    <div class="row modal__espectaculos">
+                        <div class="col-xl-6 col-s-12 modal__espectaculos__sinopsis">
+                            <h4 id="modal__h4__2016">Sinopsis</h4>
+                            <p>"Un circo" relata la historia de un murguista que, al ensayar diversos temas con la murga, va rememorando anécdotas y personajes que conoció en un circo en el que trabajó: un burdo equilibrista, perturbado por su inseguridad; un grupo de payasos, grotescos pero polémicos; un cruel y siniestro domador; y los fenómenos autoconvocados. Todos recuerdos de aquel circo que lo mantiene atado al pasado. En ese contexto, la murga invita a recorrer este paseo y así poder descubrir si esos recuerdos del murguista son meros pantallazos del pasado, oscuras proyecciones de sí mismo o puras realidades. Un circo quizá real, quizá producto de su imaginación.</p>
                         </div>
-                        <div class="col-xl-6 col-s-12 modal__2020__integrantes">
-                            <h4>Integrantes</h4>
-                            <div class="modal__2020__integrantes__contenedor">
+                        <div class="col-xl-6 col-s-12 modal__espectaculos__integrantes">
+                            <h4 id="modal__h4__2016">Integrantes</h4>
+                            <div class="modal__espectaculos__integrantes__contenedor">
                                 <div>
                                     <h6>Primos</h6>        
                                     <ul>
@@ -342,22 +373,21 @@
     <div class="modal fade" id="año2015" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header modal__espectaculos__header">
                     <h3 class="modal-title" id="exampleModalLabel">Maldición (2015)</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="row modal__2020">
-                        <div class="col-xl-6 col-s-12 modal__2020__sinopsis">
-                            <h4>Sinopsis</h4>
-                            <p>Una tenebrosa casa abandonada es heredada. Un misterioso e inesperado sereno que siembra pánico con sólo verlo. Habitaciones malditas que encierran las más profundas miserias del hombre. Un valiente grupo de murguistas, dispuestos a ayudar a nuestro heredero a explorar y conocer cada rincón de esta sombría casa. ¿Qué pasaría si las maldiciones no son, justamente, eso que estos murguistas creen conocer?
-                                Habitaciones tomadas por diversas temáticas de la sociedad, como el morbo y la televisión, el gatillo fácil y el fútbol y su pasión, son los problemas a resolver.</p>
+                <div class="modal-body modal__espectaculos__body">
+                    <div class="row modal__espectaculos">
+                        <div class="col-xl-6 col-s-12 modal__espectaculos__sinopsis">
+                            <h4 id="modal__h4__2015">Sinopsis</h4>
+                            <p>Una tenebrosa casa abandonada es heredada. Un misterioso e inesperado sereno que siembra pánico con sólo verlo. Habitaciones malditas que encierran las más profundas miserias del hombre. Un valiente grupo de murguistas, dispuestos a ayudar a nuestro heredero a explorar y conocer cada rincón de esta sombría casa. ¿Qué pasaría si las maldiciones no son, justamente, eso que estos murguistas creen conocer? Habitaciones tomadas por diversas temáticas de la sociedad como el morbo y la televisión, el gatillo fácil y el fútbol y su pasión, son los problemas a resolver. Quizá terminen por descubrir que estas "maldiciones" no son responsabilidad de una situación supersticiosa y esotérica, sino que éstas las generamos y las transportamos todxs, independientemente donde uno se encuentre, así sea en el paraíso más perfecto o una sucia y olvidada mansión abandonada.</p>
                         </div>
-                        <div class="col-xl-6 col-s-12 modal__2020__integrantes">
-                            <h4>Integrantes</h4>
-                            <div class="modal__2020__integrantes__contenedor">
+                        <div class="col-xl-6 col-s-12 modal__espectaculos__integrantes">
+                            <h4 id="modal__h4__2015">Integrantes</h4>
+                            <div class="modal__espectaculos__integrantes__contenedor">
                                 <div>
                                     <h6>Primos</h6>        
                                     <ul>
@@ -418,21 +448,22 @@
     <div class="modal fade" id="año2013" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header modal__espectaculos__header">
                     <h3 class="modal-title" id="exampleModalLabel">Elecciones (2013)</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="row modal__2020">
-                        <div class="col-xl-6 col-s-12 modal__2020__sinopsis">
-                            <h4>Sinopsis</h4>
-                            <p>La murga intenta describir diversas situaciones del concepto Elección. Por un lado, están los que eligen todo lo que desean sin evaluar consecuencias; están los que eligen ser algo que no son; los que dicen elegir con libertad bajo un manto de azar y supersticiones; y también están las que, a pesar de esa supuesta libertad, no pueden elegir ante la realidad que le es impuesta. Es de remarcar este caso, tanto por la buena repercusión de este pasaje como así también por el reciente renacer mediático del caso de Marita Verón, ya que la murga desarrolla una canción referida a la trata de mujeres y el comercio sexual, como parte de aquellas mujeres que no pueden elegir, aunque quieran, la tremenda vida que se les impone.</p>
+                <div class="modal-body modal__espectaculos__body">
+                    <div class="row modal__espectaculos">
+                        <div class="col-xl-6 col-s-12 modal__espectaculos__sinopsis">
+                            <h4 id="modal__h4__2013">Sinopsis</h4>
+                            <p>
+                                El nombre refiere a dos cuestiones: por un lado, le hace un guiño a las elecciones legislativas del año 2012 y a la vez hace un paseo a través de las distintas elecciones que toman las personas en lo cotidiano y en la forma en como lo hacen. La murga intenta describir diversas situaciones del concepto "elección": están quienes eligen todo lo que desean sin evaluar consecuencias, hay otrxs que eligen ser algo que no son, también quienes dicen elegir con libertad bajo un manto de azar y supersticiones; y también están las que, a pesar de esa supuesta libertad, no pueden elegir ante la realidad que le es impuesta: como aquellas que son sometidas a la trata y el comercio sexual.</p>
                         </div>
-                        <div class="col-xl-6 col-s-12 modal__2020__integrantes">
-                            <h4>Integrantes</h4>
-                            <div class="modal__2020__integrantes__contenedor">
+                        <div class="col-xl-6 col-s-12 modal__espectaculos__integrantes">
+                            <h4 id="modal__h4__2013">Integrantes</h4>
+                            <div class="modal__espectaculos__integrantes__contenedor">
                                 <div>
                                     <h6>Primos</h6>        
                                     <ul>
@@ -503,12 +534,16 @@
                 $("nav").addClass("white");
                 $("#ul__menu").addClass("translate");
                 $(".ul__a").addClass("black");
+                $("#nav__logo--2").addClass ("logo-visible");
+                $("#nav__logo--1").addClass ("logo-invisible");
 
             }
             else {
                 $("nav").removeClass("white");
                 $("#ul__menu").removeClass("translate");
                 $(".ul__a").removeClass("black");
+                $("#nav__logo--2").removeClass("logo-visible");
+                $("#nav__logo--1").removeClass("logo-invisible");
             }
         });
     </script>

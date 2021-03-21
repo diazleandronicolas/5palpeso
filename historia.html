@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">   
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8ae40e061a.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>5 Pal'Peso</title>
 </head>
-
 
 <body>
 
     <nav class="navegador">
-        <div class="navegador__logo">
-            <img src="" alt="">
+        <div id="nav__logo--1" class="navegador__logo">
+            <img src="imagenes/logos/5palpeso_logo_02_rgb_blanco.png" alt="">
+        </div>
+        <div id="nav__logo--2">
+            <img src="imagenes/logos/5palpeso_logo_01_rgb_negro.png" alt="">
         </div>
         <ul id="ul__menu" class="navegador__menu">
             <li class="navegador__menu__lista"><a class="ul__a" href="index.html">Home</a></li>
@@ -27,20 +38,30 @@
 
     <header class="portada" id="portada__historia">
         <div class="portada__titulo">
-            <h1 class="portada__titulo__h1">Murga de Quilmes</h1>
+            <h1 class="portada__titulo__h1">La historia de nuestra murga</h1>
             <p class="portada__titulo__parrafo">
-                Cómo nació la murga y un breve recorrido por su historia.
+                Cómo nació y un breve recorrido a través del tiempo
             </p>
         </div>
     </header>
 
 
     <section class="historia__contenedor">
+
+        <div class="historia__titulo">
+            <h2>Un pequeño recorrido</h2>
+            <h3>Vení que te llevamos a un viaje por el tiempo</h3>
+            <p>Hace 9 años se juntaban por primera vez, en un rincon de Quilmes, un pequeño puñado de personas para cantar un poco,
+                cada uno en el tono que podía, sin saber que años después se formaría un grupo artístico que ha pasado por grandes escenarios y posee un amplio abanico de espectáculos bajo sus brazos.
+            </p>
+        </div>
+
+
         <div class="accordion" id="accordionExample">
             <div class="card">
                 <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button id="button__2020" class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             2020 - Estreno de "A todo o nada"
                         </button>
                     </h2>
@@ -48,7 +69,9 @@
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
-                        Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                        <p>
+                            En este año hubo un importante recambio creativo y escénico. Nuevas voces se suman a 5 Pal'Peso y renuevan una identidad y una forma de trabajar a la que nos estábamos acostumbrando, y que empezaba a quedar trunca. Se encuentran nuevas maneras de producir para crear un espectáculo totalmente original y renovado que apela al sentimiento de jugarse hasta el último pleno en los momentos determinantes.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -56,19 +79,14 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button id="button__2019" class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             2019 - Grabación de primer álbum
                         </button>
                     </h2>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                        <p>En 2019 la murga despidió Suerte! en el
-                            Teatro Roma de Avellaneda y en el Teatro Colonial de
-                            25 de Mayo, en las dos ocasiones a sala llena. </p>
-                        <p>    
-                            Este mismo año graba su primer disco, en el
-                            que se compila material de sus cuatro
+                        <p> Después de despedir nuestro espectáculo "Suerte!" en el Teatro Roma de Avellaneda y en el Teatro Colonial de 25 de Mayo, ese mismo año grabamos nuestro primer disco, en el que se compila material de nuestro cuatro
                             espectáculos. Si bien la murga había realizado distintas grabaciones en formato audio y también audiovisual a lo largo de su historia, es ésta la primera ocasión que se encara un producto artístico de calidad profesional. Se espera que dicho álbum se estrene a lo largo del año 2020 en todas las plataformas digitales. 
                         </p>
                     </div>
@@ -78,24 +96,16 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
-                            2018 - Estreno de "Suerte!"
+                        <button id="button__2018" class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                            2018 - Estreno de "Losotros!"
                         </button>
                     </h2>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
                         <p>
-                            En 2017 la murga lanza su cuarto
-                            espectáculo titulado Suerte!, realizando
-                            el estreno en el Teatro Cervantes de
-                            Quilmes.
-                            Además participa de la grabación del
-                            disco El Bar de los Errores de la banda
-                            Sobra Milonga, acompañándolos en sus
-                            presentaciones en Niceto Club, Teatro
-                            de Flores, Teatro Roma y Teatro de
-                            Lomas de Zamora, etc.
+                            En el verano 2018 gira por segunda vez por la costa atlántica, culminando con una fecha en Mar del Plata en el marco del Festival de Carnaval, compartiendo escenario con Miss Bolivia.
+                            Además, presentamos el show "Losotros", en conjunto con la banda La Casita Rodante, Santiago Corei y el Mago Martini, que combinaba rock, ska, murga y magia.
                         </p>
                     </div>
                 </div>
@@ -104,21 +114,15 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-                            2017 - "Losotros"
+                        <button id="button__2017" class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                            2017 - Presentación "Suerte!"
                         </button>
                     </h2>
                 </div>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                     <div class="card-body">
                         <p>
-                            En el verano 2018 gira por segunda vez
-                            por la costa atlántica, culminando con una fecha en Mar del Plata en el marco del Festival de Carnaval, 
-                            compartiendo escenario con Miss Bolivia.
-
-                            Además, presentó el show "Losotros", en conjunto
-                            con la banda La Casita Rodante,
-                            Santiago Corei y el Mago Martini, que combinaba rock, ska, murga y magia.
+                            En 2017 lanzamos nuestro cuarto espectáculo titulado Suerte! realizando el estreno en el Teatro Cervantes de Quilmes, potenciando una puesta en escena más profesional, con un equipo de doce personas entre la técnica y el staff estable. Además participamos de la grabación del disco El Bar de los Errores de la banda Sobra Milonga, acompañándolos en sus presentaciones en Niceto Club, Teatro de Flores, Teatro Roma de Avellaneda y Teatro Municipal de Lomas de Zamora, etc.
                         </p>
                     </div>
                 </div>
@@ -127,24 +131,15 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                        <button id="button__2016" class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
                             2016 - Estreno de "Un circo"
                         </button>
                     </h2>
                 </div>
                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                     <div class="card-body">
-                        <p></p>
-                        En 2016, estrena Un circo en el marco del
-                        carnaval, con una serie de shows en
-                        zona sur, y Mala Vida, en San Telmo.
-                        La presentación oficial fue en el mes de
-                        abril, en el Teatro Cervantes. Meses
-                        después, Beatflow, en Palermo, y el
-                        Teatro Municipal de Quilmes entre
-                        otros escenarios, para despedirlo en el
-                        Teatro Colonial de Capital Federal, con
-                        una función a sala llena.
+                        <p>Después de cerrar un 2015 por primera vez en la Ciudad Autónoma de Buenos Aires, elegimos abrirlos de igual manera. Otra vez la cita sería en San Telmo, pero esta vez en el bar "Mala Vida". Un lugar bastante elegido y concurrido por un nicho de seguidores de murgas uruguayas. Allí mismo presentamos un poco de nuestro tercer espectáculo "Un Circo". El estreno oficial iba a ser, por segunda vez, en el Teatro Cervantes de Quilmes. Meses después, giraríamos por algunos lugares de Capital como "Beatflow" en Palermo, y volveríamos a presentarnos en el Teatro Municipal de Quilmes, agotando nuevamente las localidades.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -152,7 +147,7 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                        <button id="button__2015" class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
                             2015 - Estreno de "Maldición"
                         </button>
                     </h2>
@@ -160,7 +155,7 @@
                 <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
                     <div class="card-body">
                         <p>
-                            El 2015 empezó con muchas expectativas para 5Pal'Peso: nuevamente fueron invitados a participar del "Carnaval del Encuentro de Quilmes". Esta vez compartiendo escenario con otra murga histórica de Uruguay: Falta y Resto. En esta oportunidad, presentaron un adelanto del segundo espectáculo: Maldición. También llevaron este formato de show a Villa Gesell por primera vez para participar del festival "El Futuro ya llegó". Con el gran impulso que venían acumulando desde el año 2013, decidieron autogestionar su primer gran show: para esto alquilaron el mítico "Teatro Cervantes" de la ciudad de Quilmes y se encargaron de producir íntegramente la fecha: desde lo escénico hasta la difusión y la técnica. El show fue un éxito rotundo. Ni lentos ni perezosos, fueron por su segunda gran fecha autogestionada, para desembarcar por primera vez en el histórico Teatro Colonial de San Telmo.
+                            El 2015 empezó con muchas expectativas para 5Pal'Peso: nuevamente fuimos invitados a participar del "Carnaval del Encuentro de Quilmes". Esta vez compartiendo escenario con otra murga histórica de Uruguay: Falta y Resto. En esta oportunidad, presentamos un adelanto de nuestro segundo espectáculo: Maldición. También llevamos este formato de show a Villa Gesell por primera vez para participar del festival "El Futuro ya llegó". Con el gran impulso que veníamos acumulando desde el año 2013, decidimos autogestionar nuestro primer gran show: para esto alquilamos el mítico "Teatro Cervantes" de la ciudad de Quilmes y nos encargamos de producir íntegramente la fecha: desde lo escénico hasta la difusión y la técnica. El show fue un éxito rotundo. Ni lentos ni perezosos, fuimos por una segunda gran fecha autogestionada, para desembarcar por primera vez en el histórico Teatro Colonial de San Telmo.
                         </p>
                     </div>
                 </div>
@@ -169,7 +164,7 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
+                        <button id="button__2014" class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
                             2014 - Teatro Municipal de Quilmes
                         </button>
                     </h2>
@@ -177,11 +172,8 @@
                 <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
                     <div class="card-body">
                         <p>
-                            Después del exitoso debut del espectáculo "Elecciones", 5Pal'Peso no se tomó vacaciones y siguió ensayando y ajustando algunas cosas de cara al próximo show que se venía: durante el carnaval de 2014, les llega una invitación de la Municipalidad de Quilmes para presentarse en el Carnaval del Encuentro, en el que compartirían escenario con la murga uruguaya más popular de esos últimos años: Agarrate Catalina. Esto significó otro momento bisagra en su historia. Durante ese año siguieron recorriendo distintos espacios del circuito cultural de la ciudad de Quilmes para culminar con una fecha en el Teatro Municipal de Quilmes donde grabarían su primer DVD. Fue grande la sorpresa cuando se enteraron que las entradas se agotaron ese mismo día. Luego de otra noche exitosa y para el recuerdo, la murga decidió que debían empezar a pensar en un nuevo espectáculo.
+                            Después del exitoso debut del espectáculo "Elecciones", 5Pal'Peso no se tomó vacaciones y siguió ensayando y ajustando algunas cosas de cara al próximo show que se venía: durante el carnaval de 2014, nos llega una invitación de la Municipalidad de Quilmes para presentarnos en el Carnaval del Encuentro, en el que compartiríamos escenario con la murga uruguaya más popular de esos últimos años: Agarrate Catalina. Esto significó otro momento bisagra en nuestra historia. Durante ese año seguimos recorriendo distintos espacios del circuito cultural de la ciudad de Quilmes para culminar con una fecha en el Teatro Municipal de Quilmes donde grabaríamos nuestro primer DVD. Fue grande la sorpresa cuando nos enteramos que las entradas se agotaron ese mismo día. Luego de otra noche exitosa y para el recuerdo, la murga decidió que debían empezar a pensar en un nuevo espectáculo.
                         </p>
-                    </div>
-                    <div class="card-img">
-                        <img src="imagenes/espectaculos/suerte_1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -189,7 +181,7 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
+                        <button id="button__2013" class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
                             2013 - Estreno de "Elecciones"
                         </button>
                     </h2>
@@ -204,14 +196,14 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseTwo">
+                        <button id="button__2012" class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseTwo">
                             2012 - Primer show de 5Pal'Peso
                         </button>
                     </h2>
                 </div>
                 <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
                     <div class="card-body">
-                        <p>A finales de 2011, la murga aún no conseguía un número de integrantes constantes como para empezar a pensar en un show en vivo. Esto cambiaría en la primera mitad del año 2012, cuando, de a poco se fue sumando más gente, y los ensayos se volvieron mucho más fructíferos y disfrutables. Salió el nombre "5Pal'Peso", lo que ya transformaba la primera concepción de "taller" a un grupo artístico en proceso, y empezó a rondar la idea de presentarse en vivo. Eso se concretaría el 4 de agosto del mismo año en el Bar Despertándonos (Quilmes) que, luego, pasaría a ser el escenario más concurrido por la murga.
+                        <p>A finales de 2011, aún no conseguíamos un número de integrantes constantes como para empezar a pensar en un show en vivo. Esto cambiaría en la primera mitad del año 2012, cuando, de a poco se fue sumando más gente, y los ensayos se volvieron mucho más fructíferos y disfrutables. Salió el nombre "5Pal'Peso", lo que ya transformaba la primera concepción de "taller" a un grupo artístico en proceso, y empezó a rondar la idea de presentarse en vivo. Eso se concretaría el 4 de agosto del mismo año en el Bar Despertándonos (Quilmes) que, luego, pasaría a ser el escenario más concurrido por la murga.
                         </p>
                     </div>
                 </div>
@@ -220,181 +212,59 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTwo">
+                        <button id="button__2011" class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTwo">
                             2011 - Nacimiento
                         </button>
                     </h2>
                 </div>
                 <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
                     <div class="card-body">
-                        <p>5 Pal’Peso nace a mediados del año 2011 en la ciudad de Quilmes. Al principio fue pensado como un taller del género de murga uruguaya, bajo la dirección de Martín Fuente, quien, anteriormente, había participado de "Jaque Mate", otra murga de Lanús. En sus comienzos, quienes asistían a este "taller-encuentro" solían ser gente relacionada con la música y, por lo general, con pocos conocimientos sobre el género. Por lo que el repertorio que se ensayaban eran canciones clásicas de la música popular uruguaya, y no de murgas (propiamente dicho). </p>
+                        <p>5 Pal’Peso nace a mediados del año 2011 en la ciudad de Quilmes. Al principio, este proyecto, fue pensado como un taller del género de murga uruguaya, bajo la dirección de Martín Fuente, quien, anteriormente, había participado de "Jaque Mate", otra murga de Lanús. En sus comienzos, quienes asistían a este "taller-encuentro" solían ser gente relacionada con la música y, por lo general, con pocos conocimientos sobre el género. Por lo que en el repertorio se ensayaban eran canciones clásicas de la música popular uruguaya, y no de murgas (propiamente dicho). </p>
                     </div>
                 </div>
             </div>
     </section>
 
 
-
-
-
-
-
-<!--         <section class="historia">
-            <h2 class="historia__titulo">Línea de tiempo</h2>
-            <div class="historia__linea">
-                <div class="historia__linea__2020">
-                    <div class="historia__linea__2020__año" id="año2020">
-                        <p>2020</p>
-                    </div>
-                    <div class="historia__linea__2020__parrafo">
-                        <details class="historia__linea__2020__parrafo__details">
-                            <summary class="historia__linea__2020__parrafo__details__summary"> A todo o nada
-                            </summary>
-                            <p class="historia__linea__2020__parrafo__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, ipsam?
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati magni esse repellat cum harum fugiat ducimus dignissimos rerum in nam quae ratione, eligendi illo labore eaque maxime sed voluptas ex.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet quis deleniti dolorum cupiditate, pariatur consequatur dolore. Et, quaerat ad. Dignissimos ut, sapiente cumque eveniet expedita est vitae suscipit modi excepturi commodi vel quam, molestias reiciendis perferendis quod corporis. Enim?
-                            </p>
-                        </details>
-                    </div>
-                </div> -->
-
-
-
-
-<!--                 <div class="historia__linea__2020">
-                    <div class="historia__linea__2020__año">
-                        <p>2020</p>
-                    </div>
-                    <div class="historia__linea__2020__parrafo">
-                        <details class="historia__linea__2020__parrafo__details">
-                            <summary class="historia__linea__2020__parrafo__details__summary"> A todo o nada
-                            </summary>
-                            <p class="historia__linea__2020__parrafo__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, ipsam?
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati magni esse repellat cum harum fugiat ducimus dignissimos rerum in nam quae ratione, eligendi illo labore eaque maxime sed voluptas ex.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet quis deleniti dolorum cupiditate, pariatur consequatur dolore. Et, quaerat ad. Dignissimos ut, sapiente cumque eveniet expedita est vitae suscipit modi excepturi commodi vel quam, molestias reiciendis perferendis quod corporis. Enim?
-                            </p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="historia__linea__2020">
-                    <div class="historia__linea__2020__año">
-                        <p>2020</p>
-                    </div>
-                    <div class="historia__linea__2020__parrafo">
-                        <details class="historia__linea__2020__parrafo__details">
-                            <summary class="historia__linea__2020__parrafo__details__summary"> A todo o nada
-                            </summary>
-                            <p class="historia__linea__2020__parrafo__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, ipsam?
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati magni esse repellat cum harum fugiat ducimus dignissimos rerum in nam quae ratione, eligendi illo labore eaque maxime sed voluptas ex.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet quis deleniti dolorum cupiditate, pariatur consequatur dolore. Et, quaerat ad. Dignissimos ut, sapiente cumque eveniet expedita est vitae suscipit modi excepturi commodi vel quam, molestias reiciendis perferendis quod corporis. Enim?
-                            </p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="historia__linea__2020">
-                    <div class="historia__linea__2020__año">
-                        <p>2020</p>
-                    </div>
-                    <div class="historia__linea__2020__parrafo">
-                        <details class="historia__linea__2020__parrafo__details">
-                            <summary class="historia__linea__2020__parrafo__details__summary"> A todo o nada
-                            </summary>
-                            <p class="historia__linea__2020__parrafo__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, ipsam?
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati magni esse repellat cum harum fugiat ducimus dignissimos rerum in nam quae ratione, eligendi illo labore eaque maxime sed voluptas ex.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet quis deleniti dolorum cupiditate, pariatur consequatur dolore. Et, quaerat ad. Dignissimos ut, sapiente cumque eveniet expedita est vitae suscipit modi excepturi commodi vel quam, molestias reiciendis perferendis quod corporis. Enim?
-                            </p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="historia__linea__2019">
-
-                </div>
-                <div class="historia__linea__2018">
-
-                </div>
-                <div class="historia__linea__2017">
-
-                </div>
-                <div class="historia__linea__2016">
-
-                </div>
-                <div class="historia__linea__2015">
-
-                </div>
-                <div class="historia__linea__2014">
-
-                </div>
-                <div class="historia__linea__2013">
-
-                </div>
-                <div class="historia__linea__2012">
-
-                </div>
-                <div class="historia__linea__2011">
-
-                </div>
-            </div> -->
-
-
     <footer class="footer">
-        <div class="footer__parrafo">
-            <p>Nuestra casa es el Club Mitre</p>
-            <p>Mitre 1417, Quilmes, BA</p>
-            <p>¿Querés presenciar un ensayo?</p>
-            <p>Martes y jueves de 20hs a 22hs</p>
-        </div>
-        <div class="footer__enlaces">
-            <div class="footer__enlaces__iconos">
-                <ul>
-                    <li><a href="http://www.youtube.com/c/5palpesomurga" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="http://www.instagram.com/5palpesomurga" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="http://www.facebook.com/5palpesomurga" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                </ul>
+        <div class="footer__logo">
+            <div class="footer__logo__img">
+                <img src="imagenes/logos/5palpeso_logo_01_rgb_negro.png" alt="">
             </div>
-            <div class="footer__enlaces__texto">
-                <p>Todos los derechos reservados ©</p>
-                <p>¡Mandanos un <a href="prensacincopalpeso@gmail.coam">mail</a>! :)</p>
+            <div class="footer__logo__derechos">
+                <p>©2021 Todos los derechos reservados</p>
             </div>
         </div>
+        <div class="footer__texto">
+            <div class="footer__texto__mitre">
+                <p class="footer__texto--1">Nuestra casa es el</p>
+                <p class="footer__texto--2">Club Mitre</p>
+                <p class="footer__texto--3">Mitre 1417, Quilmes, BA</p>
+            </div>
+            <div class="footer__texto__ensayo">
+                <p class="footer__texto--1">¿Querés presenciar un ensayo?</p>
+                <p class="footer__texto--2">Vení</p>
+                <p class="footer__texto--3">Martes y jueves de 18hs a 20hs</p>
+            </div>
+            <div class="footer__texto__consulta">
+                <p class="footer__texto--1">¿Tenés alguna consulta?</p>
+                <p class="footer__texto--2">Mandamos un mail</p>
+                <p class="footer__texto--3"><a href="mailto: prensacincopalpeso@gmail.com">prensacincopalpeso@gmail.com</a></p>
+            </div>
+            <div class="footer__texto__seguinos">
+                <p class="footer__texto--1">¿Querés estar al tanto?</p>
+                <p class="footer__texto--2">Seguinos</p>
+                <div class="footer__seguinos__iconos">
+                    <ul>
+                        <li><a href="http://www.youtube.com/c/5palpesomurga" target="_blank"><i id="icono__youtube" class="fab fa-youtube"></i></a></li>
+                        <li><a href="http://www.instagram.com/5palpesomurga" target="_blank"><i id="icono__instagram" class="fab fa-instagram"></i></a></li>
+                        <li><a href="http://www.facebook.com/5palpesomurga" target="_blank"><i id="icono__facebook" class="fab fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
     </footer>
-
-
-
-    <!----MODALES--->
-
-    <div class="modal fade" id="año2020" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="exampleModalLabel">A todo o nada (2020)</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xl-6 col-s-12">
-                            <img src="" alt="musica">
-                        </div>
-                        <div class="col-xl-6 col-s-12 biografiaRincon">
-                            <div>
-                                <h5>Biografía</h5>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem assumenda eligendi laudantium commodi dolores. Ratione asperiores fugit obcaecati cum nihil, maxime iste deserunt cupiditate quidem sit dolores ex et. Praesentium pariatur cum nulla maiores. Eligendi minima rem nemo iure alias?</p>                                  
-                            </div>
-                            <div>
-                                <h5>Rincón</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas alias itaque placeat blanditiis quidem? Ut at vero saepe magnam minima officiis incidunt dolore labore, ipsa illo laudantium ea necessitatibus. Rem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -410,12 +280,16 @@
                 $("nav").addClass("white");
                 $("#ul__menu").addClass("translate");
                 $(".ul__a").addClass("black");
+                $("#nav__logo--2").addClass ("logo-visible");
+                $("#nav__logo--1").addClass ("logo-invisible");
 
             }
             else {
                 $("nav").removeClass("white");
                 $("#ul__menu").removeClass("translate");
                 $(".ul__a").removeClass("black");
+                $("#nav__logo--2").removeClass("logo-visible");
+                $("#nav__logo--1").removeClass("logo-invisible");
             }
         });
     </script>

@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">   
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8ae40e061a.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>5 Pal'Peso</title>
 </head>
 
 <body>
 
     <nav class="navegador">
-        <div class="navegador__logo">
-            <img src="" alt="">
+        <div id="nav__logo--1" class="navegador__logo">
+            <img src="imagenes/logos/5palpeso_logo_02_rgb_blanco.png" alt="">
+        </div>
+        <div id="nav__logo--2">
+            <img src="imagenes/logos/5palpeso_logo_01_rgb_negro.png" alt="">
         </div>
         <ul id="ul__menu" class="navegador__menu">
             <li class="navegador__menu__lista"><a class="ul__a" href="index.html">Home</a></li>
@@ -34,15 +46,11 @@
     </header>
 
     <main>
-<!-- 
-        <div class="integrantes">
-            <h2 class="integrantes__titulo">En escena</h2>
-        </div> -->
 
         <section class="verano">
             <div class="verano__grid">
-                <div class="verano__grid--titulo">
-                    <h3>Team Verano</h3>
+                <div class="verano__grid__titulo">
+                    <img src="imagenes/integrantes/team_verano@2x.png" alt="">
                 </div>
                 <div data-toggle="modal" data-target="#verano__1">
                     <img id="verano__grid--1" src="imagenes/integrantes/verano_1.jpg" alt="">
@@ -73,8 +81,8 @@
 
         <section class="invierno">
             <div class="invierno__grid">
-                <div class="invierno__grid--titulo">
-                    <h3>Team invierno</h3>
+                <div class="invierno__grid__titulo">
+                    <img src="imagenes/integrantes/team_invierno@2x.png" alt="">
                 </div>
                 <div data-toggle="modal" data-target="#invierno__1">
                     <img id="invierno__grid--1" src="imagenes/integrantes/invierno_1.jpg" alt="">
@@ -128,25 +136,43 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__parrafo">
-            <p>Nuestra casa es el Club Mitre</p>
-            <p>Mitre 1417, Quilmes, BA</p>
-            <p>¿Querés presenciar un ensayo?</p>
-            <p>Martes y jueves de 20hs a 22hs</p>
-        </div>
-        <div class="footer__enlaces">
-            <div class="footer__enlaces__iconos">
-                <ul>
-                    <li><a href="http://www.youtube.com/c/5palpesomurga" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="http://www.instagram.com/5palpesomurga" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="http://www.facebook.com/5palpesomurga" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                </ul>
+        <div class="footer__logo">
+            <div class="footer__logo__img">
+                <img src="imagenes/logos/5palpeso_logo_01_rgb_negro.png" alt="">
             </div>
-            <div class="footer__enlaces__texto">
-                <p>Todos los derechos reservados ©</p>
-                <p>¡Mandanos un <a href="prensacincopalpeso@gmail.coam">mail</a>! :)</p>
+            <div class="footer__logo__derechos">
+                <p>©2021 Todos los derechos reservados</p>
             </div>
         </div>
+        <div class="footer__texto">
+            <div class="footer__texto__mitre">
+                <p class="footer__texto--1">Nuestra casa es el</p>
+                <p class="footer__texto--2">Club Mitre</p>
+                <p class="footer__texto--3">Mitre 1417, Quilmes, BA</p>
+            </div>
+            <div class="footer__texto__ensayo">
+                <p class="footer__texto--1">¿Querés presenciar un ensayo?</p>
+                <p class="footer__texto--2">Vení</p>
+                <p class="footer__texto--3">Martes y jueves de 18hs a 20hs</p>
+            </div>
+            <div class="footer__texto__consulta">
+                <p class="footer__texto--1">¿Tenés alguna consulta?</p>
+                <p class="footer__texto--2">Mandamos un mail</p>
+                <p class="footer__texto--3"><a href="mailto: prensacincopalpeso@gmail.com">prensacincopalpeso@gmail.com</a></p>
+            </div>
+            <div class="footer__texto__seguinos">
+                <p class="footer__texto--1">¿Querés estar al tanto?</p>
+                <p class="footer__texto--2">Seguinos</p>
+                <div class="footer__seguinos__iconos">
+                    <ul>
+                        <li><a href="http://www.youtube.com/c/5palpesomurga" target="_blank"><i id="icono__youtube" class="fab fa-youtube"></i></a></li>
+                        <li><a href="http://www.instagram.com/5palpesomurga" target="_blank"><i id="icono__instagram" class="fab fa-instagram"></i></a></li>
+                        <li><a href="http://www.facebook.com/5palpesomurga" target="_blank"><i id="icono__facebook" class="fab fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
     </footer>
 
     <!---MODAL INVIERNO--->
@@ -490,12 +516,16 @@
                 $("nav").addClass("white");
                 $("#ul__menu").addClass("translate");
                 $(".ul__a").addClass("black");
+                $("#nav__logo--2").addClass ("logo-visible");
+                $("#nav__logo--1").addClass ("logo-invisible");
 
             }
             else {
                 $("nav").removeClass("white");
                 $("#ul__menu").removeClass("translate");
                 $(".ul__a").removeClass("black");
+                $("#nav__logo--2").removeClass("logo-visible");
+                $("#nav__logo--1").removeClass("logo-invisible");
             }
         });
     </script>
