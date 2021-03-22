@@ -49,7 +49,6 @@ nav.sticky {
     width: 5%;
 }
 
-
 .nav__menu {
     position: relative;
     display: flex;
@@ -131,7 +130,7 @@ nav .btn {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     gap: 2em;
-    padding: 2em;
+    padding: 0 4em;
     align-items: end;
 }
 
@@ -520,6 +519,10 @@ nav .btn {
 
 /*Team Invierno*/
 
+.invierno {
+    padding: 4em 6em;
+}
+
 .invierno__grid {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -575,6 +578,10 @@ nav .btn {
 }
 
 /*Team Verano*/
+
+.verano {
+    padding: 4em 6em;
+}
 
 .verano__grid {
     display: grid;
@@ -645,6 +652,10 @@ nav .btn {
 }
 
 /*Staff*/
+
+.staff {
+    padding: 4em 6em;
+}
 
 .staff__titulo {
     width: 100%;
@@ -1548,12 +1559,13 @@ nav .btn {
         transition: 0.5s;
     }
 
-    .nav__menu .btn .close-btn {
+    .close-btn {
+        color: white;
         position: absolute;
         top: 0;
-        left: 0;
-        margin: 2em;
-        color: black
+        right: 0;
+        margin: 1em 3em;
+        font-size: 0.8em;
     }
 
     nav .nav__menu a {
@@ -1598,6 +1610,31 @@ nav .btn {
         width: 80%;
     }
 
+    /*---Historia---*/
+
+    .historia__contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    /*---Integrantes---*/
+
+    .verano {
+        margin: 0 0 2em 0;
+    }
+
+    .verano__grid, 
+    .invierno__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .verano__grid__titulo {
+        grid-column: 1;
+    }
+
+    .staff__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
     /*---Contacto---*/
 
     #portada__contacto {
@@ -1621,17 +1658,18 @@ nav .btn {
 
     /*---Footer---*/
 
+    .footer {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+
+    }
+
     .footer__logo {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .footer__texto {
         gap: 0;
-    }
-
-    .footer__texto__seguinos {
-        grid-row: 2 / 3;
-        grid-column: 1 / 3;
     }
 
     .footer__texto--1,
@@ -1645,15 +1683,101 @@ nav .btn {
         justify-content: center;
     }
 
-    .footer__texto__consulta {
-        display: none;
-    }
 }
 
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 
+    body {
+        font-size: 7px;
+    }
+
+    /*---Nav---*/
+
+    .nav__logo {
+        width: 25%;
+    }
+
+    .nav__logo.logo-pequeño {
+        width: 15%;
+    }
+
+    /*---Header---*/
+
+    .portada__titulo__h1 {
+        font-size: 4.3em;
+        
+    }
+
+    .portada__titulo__parrafo {
+        font-size: 2.3em;
+    }
+
+    /*---Index---*/
+
+
+    .recorrido__uno {
+        grid-template-columns: 1fr;
+        padding: 4em 4em;
+    }
+
+    .recorrido__uno__div__año {
+        font-size: 3em;
+    }
+
+    .recorrido__uno__div__titulo {
+        padding: 0 0 1.5em 0;
+    }
+
+    .recorrido__uno__div__parrafo {
+        padding: 0 4em;
+        font-size: 1.7em;
+    }
+
+    .degustacion__div__texto,
+    .documental__div__texto {
+        padding: 0;
+    }
+
+    .degustacion__div__video,
+    .documental__div__video {
+        width: 100%;
+    }
+
+    .degustacion__div__texto__parrafo,
+    .documental__div__texto__parrafo {
+        font-size: 1.8em;
+        margin: 0;
+    }
+
+    .newsletter__boton {
+        width: 50%;
+        margin: 0.3em;
+        padding: 0;
+    }
+
+    /*---Espectaculos---*/
+
+    .espectaculos__2020__img,
+    .espectaculos__2017__img,
+    .espectaculos__2016__img,
+    .espectaculos__2015__img,
+    .espectaculos__2013__img {
+        width: 90%;
+    }
+
+    .modal__espectaculos__sinopsis p {
+        font-size: 1.3em;
+    }
+
+    .modal__espectaculos__integrantes__contenedor, ul, p {
+        font-size: 1.2em;
+    }
+
+    .modal__espectaculos h4 {
+        padding: 0.5em 0;
+    }
 }
 
 
@@ -1661,7 +1785,7 @@ nav .btn {
 
 
 
-@media (max-width: 414px) {
+/* @media (max-width: 414px) {
     nav .btn {
         display: block;
     }
@@ -1700,4 +1824,4 @@ nav .btn {
     nav .nav__menu.active {
         right: 0;
     }
-}
+} */
