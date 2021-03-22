@@ -1609,6 +1609,10 @@ nav.white {
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 
+    .scroll {
+        display: none;
+    }
+
     .menu__hamburguesa {
         width: 30px;
         height: auto;
@@ -1680,6 +1684,14 @@ nav.white {
         text-decoration: none;
         color: orange;
         cursor: pointer;
+    }
+
+    nav.white {
+        display: none;
+    }
+
+    #ul__menu.translate {
+        display: none;
     }
 }
 
