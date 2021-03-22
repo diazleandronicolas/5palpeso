@@ -20,7 +20,7 @@
 
 <body>
 
-    <nav class="navegador">
+    <nav id="navegador" class="navegador">
         <div id="nav__logo--1" class="navegador__logo">
             <img src="imagenes/logos/5palpeso_logo_02_rgb_blanco.png" alt="">
         </div>
@@ -33,8 +33,15 @@
             <li class="navegador__menu__lista"><a class="ul__a" href="espectaculos.html">Espectáculos</a></li>
             <li class="navegador__menu__lista"><a class="ul__a" href="integrantes.html">Integrantes</a></li>
             <li class="navegador__menu__lista"><a class="ul__a" href="contacto.html">Contacto</a></li>
-        </ul>
+        </ul>   
+
     </nav>
+
+    <div id="menu__hamburguesa" class="menu__hamburguesa">
+        <div id="linea1" class="linea1"></div>
+        <div id="linea2" class="linea2"></div>
+        <div id="linea3" class="linea3"></div>
+    </div>
 
     <header class="portada" id="portada__index">
         <div class="portada__titulo">
@@ -175,9 +182,21 @@
 
 
     <script>
+        let menu__hamburguesa = document.getElementById('menu__hamburguesa');
+        let navegador = document.getElementById('navegador');
+        let linea1 = document.getElementById('linea1');
+        let linea2 = document.getElementById('linea2');
+        let linea3 = document.getElementById('linea3');
+
+        menu__hamburguesa.addEventListener('click', function(){
+            navegador.classList.toggle('nav__visible');
+        })
+    </script>
+
+    <script class="chauchau">
         src="https://code.jquery.com/jquery-3.6.0.js"
     </script>
-    <script>
+    <script class="holahola">
         $(window).scroll(function() {
             if($(window).scrollTop()){
                 $("nav").addClass("white");
@@ -196,5 +215,7 @@
             }
         });
     </script>
+
+
 </body>
 </html>

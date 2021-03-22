@@ -1602,3 +1602,86 @@ nav.white {
         display: none;
     }
 }
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+    .menu__hamburguesa {
+        width: 30px;
+        height: auto;
+        position: fixed;
+        top: 2em;
+        right: 2em;
+        z-index: 1000;
+    }
+    
+    .linea1, .linea2 {
+        width: 20px;
+        height: 3px;
+        background-color: turquoise;
+    }
+    
+    .linea3 {
+        width: 20px;
+        height: 3px;
+        background-color: turquoise;
+    }
+    
+    .linea2 {
+        margin: 5px 0;
+    }
+    
+    .linea1b {
+        transform: rotate(45deg) translate(4px 6px);
+    }
+    
+    .linea2b {
+        opacity: 0;
+    }
+    
+    .linea3b {
+        transform: rotate(-45deg) translate(6px -7px);
+    }
+    
+    .navegador {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: red;
+        right: -100%;
+        z-index: 1000;
+    }
+    
+    .nav__visible {
+        right: 0;
+    }
+    
+    .navegador__menu {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    
+    .navegador__menu__lista {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navegador__menu__lista .ul__a {
+        text-decoration: none;
+        color: orange;
+        cursor: pointer;
+    }
+}
+
+
+
