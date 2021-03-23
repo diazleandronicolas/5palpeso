@@ -64,6 +64,13 @@ nav.sticky {
     padding: 0 1em;
     color: white;
     text-transform: uppercase;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.nav__menu a:hover {
+    color: #ffff01;
+    transform: translateX(-10px);
 }
 
 nav .btn {
@@ -72,6 +79,16 @@ nav .btn {
     cursor: pointer;
     display: none;
 }
+
+#menu__home,
+#menu__espectaculos,
+#menu__integrantes,
+#menu__contacto,
+#menu__historia {
+    font-weight: bolder;
+    color: #ffff01;
+}
+
 
 /*Header*/
 
@@ -201,11 +218,16 @@ nav .btn {
     font-size: 1.2em;
     color: black;
     margin: 0;
+    transition: 0.3s;
 }
 
 .footer__texto--3 a {
     color: black;
     text-decoration-line: underline;
+}
+
+.footer__texto--3 a:hover {
+    color: #f0047f;
 }
 
 .footer__seguinos__iconos {
@@ -224,6 +246,12 @@ nav .btn {
 .footer__seguinos__iconos ul li {
     display: inline-block;
     margin: 0 5px 0 0;
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+}
+
+.footer__seguinos__iconos ul li:hover {
+    transform: scale(1.2, 1.2)
 }
 
 #icono__youtube {
@@ -308,6 +336,7 @@ nav .btn {
     font-size: 1.4em;
     text-align: justify;
 }
+
 
 /*Sección Degustación*/
 
@@ -557,7 +586,7 @@ nav .btn {
     bottom: 0.1em;
     left: 0;
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 2em;
     visibility: hidden;
     color: white;
 }
@@ -628,7 +657,7 @@ nav .btn {
     bottom: 0.1em;
     left: 0;
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 2em;
     visibility: hidden;
     color: white;
 }
@@ -708,7 +737,6 @@ nav .btn {
 }
 
 .staff__grid div {
-    background-color: thistle;
     width: 100%;
     height: auto;
     cursor: pointer;
@@ -719,7 +747,7 @@ nav .btn {
     bottom: 0.1em;
     left: 0;
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 2em;
     visibility: hidden;
     color: white;
 }
@@ -808,7 +836,6 @@ nav .btn {
     margin: 0;
     font-family: "Allerta Stencil", sans-serif;
     text-transform: uppercase;
-    color: #01a0c6;
 }
 
 /*Espectaculo 2020*/
@@ -823,15 +850,19 @@ nav .btn {
     padding: 8em;
     width: 100%;
     height: auto;
-    background-color: white;
 }
 
 .espectaculos__2020__img {
     height: auto;
     width: auto;
-    background-color: rgb(182, 122, 44);
     cursor: pointer;
     margin: 2em;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.espectaculos__2020__img:hover {
+    transform: scale(1.1)
 }
 
 .espectaculos__2020__img img {
@@ -897,6 +928,12 @@ nav .btn {
     width: auto;
     margin: 2em;
     cursor: pointer;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.espectaculos__2017__img:hover {
+    transform: scale(1.1)
 }
 
 .espectaculos__2017__img img {
@@ -940,7 +977,6 @@ nav .btn {
     padding: 8em;
     width: 100%;
     height: auto;
-    background-color: rgb(255, 255, 255);
 }
 
 .espectaculos__2016__texto {
@@ -958,6 +994,12 @@ nav .btn {
     width: auto;
     margin: 2em;
     cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+}
+
+.espectaculos__2016__img:hover {
+    transform: scale(1.1)
 }
 
 .espectaculos__2016__img img {
@@ -1013,6 +1055,12 @@ nav .btn {
     width: auto;
     margin: 2em;
     cursor: pointer;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.espectaculos__2015__img:hover {
+    transform: scale(1.1)
 }
 
 .espectaculos__2015__img img {
@@ -1074,6 +1122,12 @@ nav .btn {
     width: auto;
     margin: 2em;
     cursor: pointer;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.espectaculos__2013__img:hover {
+    transform: scale(1.1)
 }
 
 .espectaculos__2013__img img {
@@ -1298,6 +1352,11 @@ nav .btn {
     color: white;
     font-size: 1.5em;
     line-height: 1em;
+    transition: all 0.2s;
+}
+
+.portada__contacto__p--2:hover {
+    transform: translateY(-5px);
 }
 
 .portada__contacto__titulo a {
@@ -1564,7 +1623,7 @@ nav .btn {
 /*Small devices (landscape phones, less than 768px)*/
 @media (max-width: 769px) {
     body {
-        font-size: 8px;
+        font-size: 8.5px;
     }
 
     /*----Nav----*/
@@ -1637,7 +1696,7 @@ nav .btn {
     .espectaculos__2016__img,
     .espectaculos__2015__img,
     .espectaculos__2013__img {
-        width: 80%;
+        width: 90%;
     }
 
     /*---Historia---*/
@@ -1668,12 +1727,31 @@ nav .btn {
     /*---Contacto---*/
 
     #portada__contacto {
-        height: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10em 10em;
+        justify-content: space-evenly;
     }
 
     .portada__contacto__titulo {
         font-size: 0.8em;
         bottom: 0;
+        height: auto;
+    }
+
+    .portada__contacto__p--1,
+    .portada__contacto__p--2 {
+        font-size: 1.7em;
+    }
+
+    .portada__contacto__form {
+        width: 100%;
+        height: auto;
+    }
+
+    .portada__contacto__form form {
+        height: auto;
     }
 
     .form__contacto__nombre,
@@ -1683,7 +1761,7 @@ nav .btn {
     }
 
     .form-control {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
     /*---Footer---*/
@@ -1883,8 +1961,8 @@ nav .btn {
 
     .portada__contacto__titulo {
         height: auto;
-        font-size: 1.2em;
-        padding: 0 0 4em 0;
+        font-size: 1.1em;
+        padding: 0;
     }
 
     .portada__contacto__form form {
@@ -1896,6 +1974,10 @@ nav .btn {
     #portada__integrantes {
         background: url(../imagenes/fondos/fondo_integrantes.jpg) no-repeat;
         background-size: cover;
+    }
+
+    #portada__integrantes .portada__titulo__h1 {
+        font-size: 3.5em;
     }
 
     .invierno__grid,
@@ -1919,12 +2001,20 @@ nav .btn {
     .verano__grid__titulo--hor img {
         width: 100%;
     }
+
+    .modal.fade.show {
+        height: 100vh;
+    }
+
+    .modal__espectaculos__integrantes__contenedor {
+        column-gap: 2em;
+    }
 }
 
 
 @media (max-width: 425px) {
     body {
-        font-size: 6px;
+        font-size: 7px;
     }
 
     /*---Nav bar---*/
@@ -2004,7 +2094,7 @@ nav .btn {
 
 @media (max-width: 330px) {
     body {
-        font-size: 5px;
+        font-size: 6px;
     }
 
     nav {
@@ -2022,7 +2112,20 @@ nav .btn {
         width: auto;
     }
 
+    .espectaculos__2020__img,
+    .espectaculos__2017__img,
+    .espectaculos__2016__img,
+    .espectaculos__2015__img,
+    .espectaculos__2013__img {
+        width: 100%;
+    }
+
     /*---Contacto---*/
+
+    .portada__contacto__titulo {
+        margin: 0 0 4em 0;
+        font-size: 1em;
+    }
 
     .portada__contacto__h1 {
         font-size: 4em;
@@ -2033,6 +2136,3 @@ nav .btn {
         font-size: 2em;
         margin: 0 0 0.2em 0;
     }
-
-
-
