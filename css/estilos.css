@@ -13,7 +13,7 @@ body {
 
 /*-----General-----*/
 
-/*Nav*/
+/*--Nav--*/
 
 nav {
     width: 100%;
@@ -90,7 +90,7 @@ nav .btn {
 }
 
 
-/*Header*/
+/*--Header--*/
 
 .portada {
     width: 100%;
@@ -124,7 +124,6 @@ nav .btn {
     height: auto;
     text-align: center;
     font-size: 2.5em;
-    text-shadow: 2px 2px 40px black;
     font-family: "Rock Salt", sans-serif;
     color: white;
 }
@@ -272,9 +271,10 @@ nav .btn {
 #portada__index {
     background: url(../imagenes/fondos/fondo_index.jpg) no-repeat 50% 50%;
     background-size: cover;
+    background-attachment: fixed;
 }
 
-/*Sección Recorrido*/
+/*--Sección Recorrido--*/
 
 .recorrido {
     padding: 0;
@@ -338,7 +338,7 @@ nav .btn {
 }
 
 
-/*Sección Degustación*/
+/*--Sección Degustación--*/
 
 .degustacion {
     margin: 0;
@@ -408,7 +408,7 @@ nav .btn {
     font-family: "Poppins", sans-serif;
 }
 
-/*Sección Documental*/
+/*--Sección Documental--*/
 
 .documental {
     width: 100%;
@@ -482,7 +482,7 @@ nav .btn {
     font-family: "Poppins", sans-serif;
 }
 
-/*Sección Newsletter*/
+/*--Sección Newsletter--*/
 
 .newsletter {
     width: 100%;
@@ -545,6 +545,7 @@ nav .btn {
 #portada__integrantes {
     background: url(../imagenes/fondos/fondo_integrantes.jpg) no-repeat 50% 50%;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .integrantes__grid {
@@ -564,7 +565,7 @@ nav .btn {
     height: auto;
 }
 
-/*Team Invierno*/
+/*--Team Invierno--*/
 
 .invierno {
     padding: 4em 6em;
@@ -628,7 +629,7 @@ nav .btn {
     cursor: unset;
 }
 
-/*Team Verano*/
+/*--Team Verano--*/
 
 .verano {
     padding: 4em 6em;
@@ -706,7 +707,7 @@ nav .btn {
     border-radius: 5px;
 }
 
-/*Staff*/
+/*--Staff--*/
 
 .staff {
     padding: 4em 6em;
@@ -784,7 +785,7 @@ nav .btn {
     object-fit: cover;
 }
 
-/*Modal Integrantes*/
+/*--Modal Integrantes--*/
 
 .modal-body .modal-no-margin {
     margin: 0;
@@ -824,6 +825,7 @@ nav .btn {
 #portada__espectaculos {
     background: url(../imagenes/fondos/fondo_espectaculos.jpg) no-repeat 50% 50%;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .espectaculos__titulo {
@@ -838,7 +840,7 @@ nav .btn {
     text-transform: uppercase;
 }
 
-/*Espectaculo 2020*/
+/*--Año 2020--*/
 
 .espectaculos__2020 {
     display: grid;
@@ -898,7 +900,7 @@ nav .btn {
     color: #f0047f;
 }
 
-/*Espectaculo 2017*/
+/*--Año 2017--*/
 
 .espectaculos__2017 {
     display: grid;
@@ -965,7 +967,7 @@ nav .btn {
     color: #ff8b00;
 }
 
-/*Espectaculo 2016*/
+/*--Año 2016--*/
 
 .espectaculos__2016 {
     display: grid;
@@ -1026,7 +1028,7 @@ nav .btn {
     color: #01a0c6;
 }
 
-/*Espectaculo 2015*/
+/*--Año 2015--*/
 
 .espectaculos__2015 {
     display: grid;
@@ -1092,7 +1094,7 @@ nav .btn {
     order: 1;
 }
 
-/*Espectaculo 2013*/
+/*--Año 2013--*/
 
 .espectaculos__2013 {
     height: 70vh;
@@ -1154,7 +1156,7 @@ nav .btn {
     color: #f0047f;
 }
 
-/*Modal Espectaculo*/
+/*--Modal Espectaculo--*/
 
 .modal__espectaculos__body {
     padding: 2em 4em;
@@ -1225,6 +1227,7 @@ nav .btn {
 #portada__historia {
     background: url(../imagenes/fondos/fondo_historia.jpg) no-repeat 50% 50%;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .historia__contenedor {
@@ -1248,7 +1251,7 @@ nav .btn {
     justify-content: space-evenly;
 }
 
-/*Titulo y párrafo*/
+/*--Título--*/
 
 .historia__titulo h2 {
     color: #01a0c6;
@@ -1270,7 +1273,7 @@ nav .btn {
     font-size: 1.5em;
 }
 
-/*Modal Historia*/
+/*--Modal Historia--*/
 
 .card {
     margin: 2em;
@@ -1287,7 +1290,7 @@ nav .btn {
     font-size: 1.3em;
 }
 
-/*Botones Collapse*/
+/*--Botones Collapse--*/
 
 #button__2020, #button__2016, #button__2012 {
     color: #f0047f;
@@ -1310,6 +1313,7 @@ nav .btn {
 #portada__contacto {
     background: url(../imagenes/fondos/fondo_contacto.jpg) no-repeat 50% 50%;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     height: 100vh;
     display: grid;
@@ -1319,6 +1323,8 @@ nav .btn {
     justify-content: center;
     padding: 4em 8em;
 }
+
+/*--Título--*/
 
 .portada__contacto__titulo {
     display: flex;
@@ -1374,6 +1380,8 @@ nav .btn {
     height: 100vh;
 }
 
+/*--Form Contacto--*/
+
 .form__contacto__nombre,
 .form__contacto__mail,
 .form__contacto__textarea {
@@ -1393,9 +1401,9 @@ nav .btn {
 }
 
 
-/*-----Media Queries------*/
+/*------Media Queries------*/
 
-/*(desktops, less than 1200px)*/
+/*(desktops, menos que 1200px)*/
 @media (max-width: 1199.98px) {
 
     body {
@@ -1430,10 +1438,10 @@ nav .btn {
     }
 }
 
-/* Medium devices (tablets, less than 992px)*/
+/* Medium devices (tablets, menos que 992px)*/
 @media (max-width: 991.98px) {
 
-    /*---Header---*/
+    /*---Nav---*/
 
     .nav__menu a {
         margin: 0 0.2em;
@@ -1446,6 +1454,8 @@ nav .btn {
     .nav__logo.logo-pequeño {
         width: 10%;
     }
+
+    /*--Header--*/
 
     .portada__titulo__h1 {
         font-size: 4em;
@@ -1620,7 +1630,7 @@ nav .btn {
     }
 }
 
-/*Small devices (landscape phones, less than 768px)*/
+/*Small devices (pantalla en horizontal, menos que 768px)*/
 @media (max-width: 769px) {
     body {
         font-size: 8.5px;
@@ -1790,11 +1800,9 @@ nav .btn {
         font-size: 2.8em;
         justify-content: center;
     }
-
 }
 
-
-/* Extra small devices (portrait phones, less than 576px)*/
+/* Extra small devices (teléfonos vertical, menos que 576px)*/
 @media (max-width: 575.98px) {
 
     body {
@@ -1820,36 +1828,6 @@ nav .btn {
 
     .portada__titulo__parrafo {
         font-size: 2.3em;
-    }
-
-    /*---Footer---*/
-
-    .footer__texto {
-        row-gap: 2em;
-    }
-
-    .footer__texto__consulta .footer__texto--2 {
-        display: none;
-    }
-
-    .footer__texto__consulta .footer__texto--2--b {
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-    }
-
-    .footer__texto__ensayo .footer__texto--1{
-        display: none;
-    }
-
-    .footer__texto__ensayo .footer__texto--1--b {
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-    }
-
-    .footer__texto__seguinos .footer__texto--1 {
-        display: none;
     }
 
     /*---Index---*/
@@ -1904,6 +1882,36 @@ nav .btn {
         padding: 0;
     }
 
+    /*---Footer---*/
+
+    .footer__texto {
+        row-gap: 2em;
+    }
+
+    .footer__texto__consulta .footer__texto--2 {
+        display: none;
+    }
+
+    .footer__texto__consulta .footer__texto--2--b {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer__texto__ensayo .footer__texto--1{
+        display: none;
+    }
+
+    .footer__texto__ensayo .footer__texto--1--b {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer__texto__seguinos .footer__texto--1 {
+        display: none;
+    }
+
     /*---Historia---*/
 
     #portada__historia {
@@ -1914,9 +1922,7 @@ nav .btn {
         font-size: 1.7em;
     }
 
-
     /*---Espectaculos---*/
-
 
     #portada__espectaculos {
         background: url(../imagenes/fondos/fondo_espectaculos.jpg) no-repeat 100%;
@@ -1942,7 +1948,6 @@ nav .btn {
     .modal__espectaculos h4 {
         padding: 0.5em 0;
     }
-
 
     .modal-header h3 {
         font-size: 3.2em;
@@ -2011,8 +2016,9 @@ nav .btn {
     }
 }
 
-
+/*Mobile tamaño L (menos que 425px)*/
 @media (max-width: 425px) {
+
     body {
         font-size: 7px;
     }
@@ -2090,12 +2096,26 @@ nav .btn {
     .footer__seguinos__iconos ul {
         margin: 0 0 0 1em;
     }
+
+    /*--Contacto--*/
+
+    .portada__contacto__titulo {
+        font-size: 1em;
+    }
+
+    .portada__contacto__h1 {
+        font-size: 4em;
+    }
 }
 
+/*Mobile tamaño S (pantalla menos que 330px)*/
 @media (max-width: 330px) {
+
     body {
         font-size: 6px;
     }
+
+    /*--Nav--*/
 
     nav {
         padding: 4em 8em;
@@ -2103,6 +2123,27 @@ nav .btn {
 
     .close-btn {
         margin: 2.5em 4em;
+    }
+
+    /*--Index--*/
+
+    .recorrido__uno {
+        padding: 2em 2em;
+    }
+
+    .degustacion__div,
+    .documental__div {
+        padding: 4em 7em;
+    }
+
+    .degustacion__titulo,
+    .documental__titulo {
+        padding: 2em 2em 0 2em;
+    }
+
+    .newsletter__div__email,
+    .newsletter__boton {
+        width: 70%;
     }
 
     /*---Espectaculos---*/

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-
     <!---Link a Google Fonts--->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -19,6 +18,9 @@
     <!---Bootstrap--->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+    <!---Favicon--->
+    <link rel="shortcut icon" href="svg/5palpeso_logo_01_rgb_negro.ico">
+
     <!---Hoja de estilos--->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -28,19 +30,36 @@
     <!---Íconos de redes sociales--->
     <script src="https://kit.fontawesome.com/8ae40e061a.js" crossorigin="anonymous"></script>
 
+    <!---Meta tags--->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---SEO--->
+    <meta name="description" content="5 Pal'Peso es una murga estilo uruguaya nacida en Quilmes, Buenos Aires. Está en actividad desde el año 2011 y, desde entonces, ha presentado cinco espectáculos y ha girado por gran parte de Buenos Aires.">
+    <meta name="keywords" content="murga uruguaya 5 pal'peso quilmes buenos aires club mitre teatro">
+    <meta name="author" content="Chope Díaz">
+
+    <!---Open Graph--->
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="5 Pal'Peso - Murga de Quilmes">
+    <meta property="og:description" content="5 Pal'Peso es una murga estilo uruguaya que se formó en Quilmes, Buenos Aires, a mediados del año 2011.">
+
+    <!---Título--->
     <title>5 Pal'Peso</title>
 </head>
 
 <body>
 
+    <!----barra nav---->
     <nav>
+        <!--Logo-->
         <div class="nav__logo">
             <a href="index.html">
-                <img src="imagenes/logos/5palpeso_logo_02_rgb_blanco.png" alt="">
+                <img src="imagenes/logos/5palpeso_logo_02_rgb_blanco.png" alt="logo 5 pal'peso">
             </a>
         </div>
+        <!----menú---->
         <div class="nav__menu">
             <div class="btn">
                 <i class=" fas fa-times close-btn"></i>
@@ -51,25 +70,28 @@
             <a href="integrantes.html">Integrantes</a>
             <a href="contacto.html">Contacto</a>
         </div>
+        <!---botón menú hamburguesa-->
         <div class="btn">
             <i class="fas fa-bars menu-btn"></i>
         </div>
     </nav>
 
     <header class="portada" id="portada__espectaculos">
+        <!---portada principal--->
         <div class="portada__titulo">
             <h1 class="portada__titulo__h1">Todos los espectáculos</h1>
             <p class="portada__titulo__parrafo">
-                Si te perdiste de alguno, acá vas a encontrar la info completa
+                Si te perdiste alguno, acá tenés la info completa.
             </p>
         </div>
     </header>
 
     <main>
         <section class="espectaculos">
+            <!----espectáculo 2020---->
             <div class="espectaculos__2020">
                 <div class="espectaculos__2020__img" data-toggle="modal" data-target="#año2020">
-                    <img src="imagenes/espectaculos/espectaculo_atodoonada.jpg" alt="">
+                    <img src="imagenes/espectaculos/espectaculo_atodoonada.jpg" alt="foto de la murga sin maquillaje con el director al frente de todo">
                 </div>
                 <div class="espectaculos__2020__texto">
                     <p class="espectaculos__2020__texto__titulo--1">2020</p>
@@ -77,9 +99,10 @@
                 </div>
             </div>
             
+            <!----espectáculo 2017--->
             <div class="espectaculos__2017">
                 <div class="espectaculos__2017__img" data-toggle="modal" data-target="#año2018">
-                    <img src="imagenes/espectaculos/espectaculo_suerte.jpg" alt="">
+                    <img src="imagenes/espectaculos/espectaculo_suerte.jpg" alt="murga 5 pal'peso en el escenario con pantalla de fondo y una rueda de la fortuna">
                 </div>
                 <div class="espectaculos__2017__texto">
                     <p class="espectaculos__2017__texto__titulo--1">2017</p>
@@ -87,9 +110,10 @@
                 </div>
             </div>
     
+            <!---espectáculo 2016--->
             <div class="espectaculos__2016">
                 <div class="espectaculos__2016__img" data-toggle="modal" data-target="#año2016">
-                    <img src="imagenes/espectaculos/espectaculo_uncirco.jpg" alt="">
+                    <img src="imagenes/espectaculos/espectaculo_uncirco.jpg" alt="la murga 5 pal'peso cantando mientras sigue las indicaciones del director escénico">
                 </div>
                 <div class="espectaculos__2016__texto">
                     <p class="espectaculos__2016__texto__titulo--1">2016</p>
@@ -97,9 +121,10 @@
                 </div>
             </div>
     
+            <!----espectáculo 2015---->
             <div class="espectaculos__2015">
                 <div class="espectaculos__2015__img" data-toggle="modal" data-target="#año2015">
-                    <img src="imagenes/espectaculos/espectaculo_maldicion.jpg" alt="">
+                    <img src="imagenes/espectaculos/espectaculo_maldicion.jpg" alt="5 pal'peso con trajes grises en un escenario luces azules y verdes">
                 </div>
                 <div class="espectaculos__2015__texto">
                     <p class="espectaculos__2015__texto__titulo--1">2015</p>
@@ -107,6 +132,7 @@
                 </div>
             </div>
     
+            <!----espectáculo 2013---->
             <div class="espectaculos__2013">
                 <div class="espectaculos__2013__img" data-toggle="modal" data-target="#año2013">
                     <img src="imagenes/espectaculos/espectaculo_elecciones.jpg" alt="">
@@ -120,16 +146,18 @@
     </main>
 
     <footer class="footer">
+        <!---Logo del footer--->
         <div class="footer__logo">
             <div class="footer__logo__img">
                 <a href="index.html">
-                    <img src="imagenes/logos/5palpeso_logo_01_rgb_negro.png" alt="">
+                    <img src="imagenes/logos/5palpeso_logo_01_rgb_negro.png" alt="logo 5 pal'peso">
                 </a>
             </div>
             <div class="footer__logo__derechos">
                 <p>©2021 Todos los derechos reservados</p>
             </div>
         </div>
+        <!---texto del footer--->
         <div class="footer__texto">
             <div class="footer__texto__mitre">
                 <p class="footer__texto--1">Nuestra casa es el</p>
@@ -162,9 +190,7 @@
     </footer>
 
 
-
-                    <!-----MODALES---->
-
+    <!-----modal espectáculo 2020------>
     <div class="modal fade" id="año2020" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -240,6 +266,8 @@
         </div>
     </div>
 
+
+    <!-----modal espectáculo 2017----->
     <div class="modal fade" id="año2018" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -317,6 +345,8 @@
         </div>
     </div>
 
+
+    <!----modal espectáculo 2016---->
     <div class="modal fade" id="año2016" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -392,6 +422,8 @@
         </div>
     </div>
     
+
+    <!----modal espectáculo 2015---->
     <div class="modal fade" id="año2015" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -467,6 +499,8 @@
         </div>
     </div>
 
+
+    <!----modal espectáculo 2013---->
     <div class="modal fade" id="año2013" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -544,13 +578,11 @@
 
 
     <!----Bootstrap-->
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
     <!---Javascript--->
-
     <script type="text/javascript">
     /*javascript para el efecto de scroll en la barra de navegación*/
         window.addEventListener("scroll", function(){
