@@ -171,11 +171,28 @@ nav .btn {
     text-transform: uppercase;
 }
 
+.footer__texto--1--b {
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 1.1em;
+    color: black;
+    margin: 0;
+    text-transform: uppercase;
+    display: none;
+}
+
 .footer__texto--2 {
     font-family: "Rock Salt", sans-serif;
     font-size: 1.8em;
     color: black;
     margin: 0;
+}
+
+.footer__texto--2--b {
+    font-family: "Rock Salt", sans-serif;
+    font-size: 1.8em;
+    color: black;
+    margin: 0;
+    display: none;
 }
 
 .footer__texto--3 {
@@ -1714,6 +1731,36 @@ nav .btn {
         font-size: 2.3em;
     }
 
+    /*---Footer---*/
+
+    .footer__texto {
+        row-gap: 2em;
+    }
+
+    .footer__texto__consulta .footer__texto--2 {
+        display: none;
+    }
+
+    .footer__texto__consulta .footer__texto--2--b {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer__texto__ensayo .footer__texto--1{
+        display: none;
+    }
+
+    .footer__texto__ensayo .footer__texto--1--b {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer__texto__seguinos .footer__texto--1 {
+        display: none;
+    }
+
     /*---Index---*/
 
 
@@ -1724,6 +1771,7 @@ nav .btn {
 
     .recorrido__uno__div__año {
         font-size: 3em;
+        margin: 0.2em;
     }
 
     .recorrido__uno__div__titulo {
@@ -1757,6 +1805,12 @@ nav .btn {
         padding: 0;
     }
 
+    /*---Historia---*/
+    .historia__titulo p {
+        font-size: 1.7em;
+    }
+
+
     /*---Espectaculos---*/
 
     .espectaculos__2020__img,
@@ -1777,6 +1831,27 @@ nav .btn {
 
     .modal__espectaculos h4 {
         padding: 0.5em 0;
+    }
+
+    /*---Contacto---*/
+
+    #portada__contacto {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .portada__contacto__titulo {
+        height: auto;
+        font-size: 1.2em;
+        padding: 0 0 4em 0;
+    }
+
+    .portada__contacto__form form {
+        height: auto;
     }
 }
 
