@@ -1917,6 +1917,7 @@ nav .btn {
     #portada__historia {
         background: url(../imagenes/fondos/fondo_historia.jpg) no-repeat 7%;
         background-size: cover;
+        background-attachment: fixed;
     }
     .historia__titulo p {
         font-size: 1.7em;
@@ -1927,6 +1928,7 @@ nav .btn {
     #portada__espectaculos {
         background: url(../imagenes/fondos/fondo_espectaculos.jpg) no-repeat 100%;
         background-size: cover;
+        background-attachment: fixed;
     }
 
     .espectaculos__2020__img,
@@ -1979,6 +1981,7 @@ nav .btn {
     #portada__integrantes {
         background: url(../imagenes/fondos/fondo_integrantes.jpg) no-repeat;
         background-size: cover;
+        background-attachment: fixed;
     }
 
     #portada__integrantes .portada__titulo__h1 {
