@@ -1313,7 +1313,6 @@ nav .btn {
 #portada__contacto {
     background: url(../imagenes/fondos/fondo_contacto.jpg) no-repeat 50% 50%;
     background-size: cover;
-    background-attachment: fixed;
     width: 100%;
     height: 100vh;
     display: grid;
